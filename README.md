@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Maaike Schoute
 
   #### Je startniveau:
-  Rood (denk ik?)
+  Rood
 
   #### Je focus:
   Responsive
@@ -39,12 +39,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   (https://www.dopplepress.com/)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/" width="375px" alt="omschrijving van de pagina">
+  Home <br>
+  <img src="readme-images/screenshots-website/website-screenshot_Tekengebied 1.jpg" width="375px" alt="volledige homepage screenshot">
+
+   #### Screenshot(s) van de eerste pagina (big screen): 
+  Home <br>
+    <img src="readme-images/screenshots-website/website-screenshot_Tekengebied 1 kopie 2.jpg" width="375px" alt="Volledige homepagina screenshot">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Shop <br>
+  <img src="readme-images/screenshots-website/website-screenshot_Tekengebied 1 kopie.jpg" width="375px" alt="omschrijving van de pagina">
+
+   #### Screenshot(s) van de tweede pagina (big screen):
+  Shop <br>
+  <img src="readme-images/screenshots-website/website-screenshot_Tekengebied 1 kopie 4.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -56,7 +64,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  
 
 </details>
 
@@ -68,10 +76,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/aantekeningen-website.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/aantekeningen-website2.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
