@@ -152,14 +152,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | moet de site ook duurzaam zijn? Kleine afbeeldingen
   | wanneer gebruik je span en wanneer gebruikt je div?
   | mag je <br> gebruiken om een tekst af te breken?
+  | hoeveel tekst mag je in je alttext zetten?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
 
   - SVG kun je kopieëren uit de code van de orginele site. Nooit externe links gebruiken. altijd downloaden, omdat de site waar de plaatjes op staan, kunnen veranderen of worden weggehaald.  Geen font awesome, omdat dat een icoontje library is. Download alle icoontjes zelf. Button maken van menu knop. BUtton is niet navigatie. Button is een knop om iets te laten gebeuren. Als je geen H1 hebt die zichtbaar is voor de gebruiker, voeg je wel een h1 toe. 
-  Visually idden css. Die code kun je gebruiken en in de css zetten. DIe zorgt ervoor dat de H1 niet zichtbaar is in layout, maar wel te horen is in de code. Je mag spans gebruiken, alleen voor de vormgeving.
-  - punt 2
+  Visually idden css. Die code kun je gebruiken en in de css zetten. DIe zorgt ervoor dat de H1 niet zichtbaar is in layout, maar wel te horen is in de code. Je mag spans gebruiken, alleen voor de vormgeving. 
+  div wordt gebruikt voor grote stukken: zoals een H1, een H2 een p, en een meer. 
+  Een span wordt gebruikt als er een inline aanpassing wordt gebruikt. Dus een H1. Of een ander onderdeel van de tekst.
+  - Een button is een interactie op de pagina. Altijd iets nodig van javascript om het te gebruikten. Je blijft op dezelfde pagina. Een href is een link naar een andere pagina. Ivo verwacht niet meer dan 2 HTML pagina's te krijgen. 1 css bestand, en 1 javascript bestand. Eerst body, en dan een main. Vergeet niet om Lang:NL te veranderen naar EN.
   - nog een punt
   - ...
 
