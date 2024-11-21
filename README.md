@@ -87,10 +87,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Alle knoppen zijn groot, dus ze zijn goed te berijken voor alle vingers.
   - Er zit ook genoeg ruimte tussen de knoppen, zodat het lastig is om op een klikken die de gebruiker niet wilde.
 
-  Headings: 
+  <strong>Headings:</strong> Headings helpen om de site in stukjes te breken, zodat de informatie beter begrijpbaar is. Deze zijn heel belangrijk voor mensen met ondersteunende technologie, om een pagina te begrijpen en er doorheen te gaan.
+  - Er wordent niet goed gebruik gemaakt van heading elementen. Veel kopjes worden compleet over geslagen, maar de afbeelding die als decoratie staat als paperclip, niet.
+  - Het is lastig om te vinden hoeveel H1's en andere headings worden gebruikt, omdat de meeste headings zijn verstopt in een afbeelding. De alt tags zijn niet duidelijk.
+  - Heading elementen zijn niet logisch geplaatst. 
+  - Je skipt heading levels, omdat sommige heading levels zijn verstopt in afbeeldingen. 
 
+  <strong>Lists</strong>: List elementen laat de gebruiker weten dat er bepaalde items die in de list staan, iets met elkaar te maken hebben. 
+  - List elementen zijn onduidelijk.
 
+  <strong>Images:</strong> Afbeeldingen zorger ervoor dat de ervaring van de site positief is.
+  - Bijna alle afbeeldingen hebben een alt tag. Op de homepagina missen 3 lange stronken, hierdoor ook de Headings, en de text die daarin staan.
+  - Onnodige/decoratieve afbeeldingen, gebruiken ook alt teksten. 
+  - Er zijn geen ingewikkelde afbeeldingen. Afbeeldingen waar een interactie bij zit, bevatten een korte tekst met uitleg.
+  - De afbeelding die gebruikt wordt waar tekst op staat, wordt de betekenis van de tekst niet herhaald. De afbeelding kan dus overal staan, als je niet ziet waar op de pagina deze staat.
 
+  <strong>Media (Video/audio):</strong> Media is pre-corded audio en video's.
+  - Er is geen muziek of video die automatisch afspeelt.
+  - Er is helemaal geen media.
+  - 
   
 
 </details>
@@ -129,11 +144,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1      
+  | ---          
+  | Vraag, in de validator check staat: "Make sure that decorative images use null alt (empty) attribute values." Betekend dit dat niet alle alt teksten een alt tag nodig hebben?
+  |Mag je elke 'grote selection' een #ID geven, zodat het bij de CSS makkelijker is om die te vinden ipv nth-of-type(blabla). Kun je dan in die sectie nth-of-type(blabla) gebruiken om 1,2,3 neer te zetten, ipv nth-of-type(20) heb je dan nth-of-type(2).
 
 
   ### Verslag van meeting
