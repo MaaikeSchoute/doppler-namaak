@@ -64,6 +64,33 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
+  WCAG cheklist
+
+  <strong>Content:</strong> Dit bepaald hoe goed de gebruiker begrijpt welke informatie er op de site staat.
+  - De taal waarin deze site is geschreven, is simpel, en makkelijk te begrijpen voor elke doelgroep. Zelfs met de vaktermen die erin worden vernoemd.
+  - Elke button is uniek en heeft een goede beschrijving.
+
+  <strong>Global Code:</strong> De code beïnvloed de hele site.
+  - Via deze link:  https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.dopplepress.com%2F, ben ik erachter gekomen dat de site niet semantisch is, en dat de code nog veel schoner kan.
+  - De site gebruikt een 'lang: en' enelement.
+  - Niet elke pagina heeft een unieke titel.
+  - Je kan inzoomen op de pagina met je vingers, of met de muis.
+
+  <strong>Keyboard:</strong> De site kan gebruikt worden met het gebruik van het toetsenbord. Blinde mensen kunnen met tab van onderwerp springen.
+  - De linkjes hebben geen duidelijke namen. Het is lastig te bepalen wat er gaat gebeuren als je met de tab op een link staat. 
+  - Er is een visuele foces, waarin je kunt zien welk onderdeel van de pagina is geselecteerd. 
+  - De volgorde gaat ook van links boven, naar rechts beneden. Ook is er een optie waarbij je het hoofmenu kunt skippen, en meteen naar de inhoud van de pagina gaat. 
+
+  <strong>Mobile en Thouch:</strong> De gebruikerervaring op de mobiel.
+  - Wanneer de mobiel horizontaal wordt gedraaid, zijn alle afbeeldingen enorm, en is het overzicht van de pagina verdwenen.
+  - Wanneer de mobiel horizontaal wordt gehouden, moet de gebruiker zowel horizontaal als verticaal scrollen. Houdt de gebruiker de telefoon verticaal in de hand vast, dan wordt de layout van de pagina goed aangepast op het scherm. Er is overzicht, en alles staat netjes onder elkaar. 
+  - Alle knoppen zijn groot, dus ze zijn goed te berijken voor alle vingers.
+  - Er zit ook genoeg ruimte tussen de knoppen, zodat het lastig is om op een klikken die de gebruiker niet wilde.
+
+  Headings: 
+
+
+
   
 
 </details>
