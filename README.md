@@ -108,6 +108,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   <strong>Controls:</strong> 
   
+  
 
 </details>
 
@@ -145,7 +146,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      
+  | <strong>Vragen</strong>      
   | ---          
   | Vraag, in de validator check staat: "Make sure that decorative images use null alt (empty) attribute values." Betekend dit dat niet alle alt teksten een alt tag nodig hebben?
   |Mag je elke 'grote selection' een #ID geven, zodat het bij de CSS makkelijker is om die te vinden ipv nth-of-type(blabla). Kun je dan in die sectie nth-of-type(blabla) gebruiken om 1,2,3 neer te zetten, ipv nth-of-type(20) heb je dan nth-of-type(2).
@@ -157,13 +158,26 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-
+  <strong>Alyaman</strong>
   - SVG kun je kopieëren uit de code van de orginele site. Nooit externe links gebruiken. altijd downloaden, omdat de site waar de plaatjes op staan, kunnen veranderen of worden weggehaald.  Geen font awesome, omdat dat een icoontje library is. Download alle icoontjes zelf. Button maken van menu knop. BUtton is niet navigatie. Button is een knop om iets te laten gebeuren. Als je geen H1 hebt die zichtbaar is voor de gebruiker, voeg je wel een h1 toe. 
   Visually idden css. Die code kun je gebruiken en in de css zetten. DIe zorgt ervoor dat de H1 niet zichtbaar is in layout, maar wel te horen is in de code. Je mag spans gebruiken, alleen voor de vormgeving. 
   div wordt gebruikt voor grote stukken: zoals een H1, een H2 een p, en een meer. 
   Een span wordt gebruikt als er een inline aanpassing wordt gebruikt. Dus een H1. Of een ander onderdeel van de tekst.
+
+  <strong>Sharlainie</strong>
   - Een button is een interactie op de pagina. Altijd iets nodig van javascript om het te gebruikten. Je blijft op dezelfde pagina. Een href is een link naar een andere pagina. Ivo verwacht niet meer dan 2 HTML pagina's te krijgen. 1 css bestand, en 1 javascript bestand. Eerst body, en dan een main. Vergeet niet om Lang:NL te veranderen naar EN.
-  - nog een punt
+  Voor een betere toegankelijkeheid is het beter om
+   1. kopje
+   2. tekstje
+   3. plaatje
+   dit kun je aanpassen met display flex. 
+   Footer hoort ook in de body. Link van script moet ook in de body, niet in de main. Geen h1 in de footer. Er is op elke pagina maar 1 h1 in de pagina.
+  - Blokjes: mag als laatste als er tijd over is. Je mag gebruik maken van een library.  OVerflow snijd hij af. 
+  Geen alt bij een background. Of als het gen inhoud communiceert. Figure image of caption. Hamburger menu wordt een NAV. geen ul. List item mmaken van alle risprinten afeeldingen. 1 section die bevan een Ul en een image. Carosel; heeft als uitzondering dat hij niet van links naar recht, maar voven naar beneden. De afbeeldingen zijn buttons. Een lijst met buttons en elke button is een afbeelding. Met javascript die laat de afbeeldignen switchen. Mag er 4 maken, hoeft niet allemaal. 
+  Liever classes gebruiken dan nth's.
+  De site ook zo duurzaam mogelijk. Strong laat zien: dit is extra belangrijk. Span: dit ziet er anders aan. 
+  Een section, met 1 ul's en 3 verschillende blokjes. 
+
   - ...
 
 </details>
