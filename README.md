@@ -150,11 +150,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | Vraag, in de validator check staat: "Make sure that decorative images use null alt (empty) attribute values." Betekend dit dat niet alle alt teksten een alt tag nodig hebben?
   |Mag je elke 'grote selection' een #ID geven, zodat het bij de CSS makkelijker is om die te vinden ipv nth-of-type(blabla). Kun je dan in die sectie nth-of-type(blabla) gebruiken om 1,2,3 neer te zetten, ipv nth-of-type(20) heb je dan nth-of-type(2).
   | moet de site ook duurzaam zijn? Kleine afbeeldingen
+  | wanneer gebruik je span en wanneer gebruikt je div?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
+
+  - SVG kun je kopieëren uit de code van de orginele site. Nooit externe links gebruiken. altijd downloaden, omdat de site waar de plaatjes op staan, kunnen veranderen of worden weggehaald.  Geen font awesome, omdat dat een icoontje library is. Download alle icoontjes zelf. Button maken van menu knop. BUtton is niet navigatie. Button is een knop om iets te laten gebeuren. Als je geen H1 hebt die zichtbaar is voor de gebruiker, voeg je wel een h1 toe. 
+  Visually idden css. Die code kun je gebruiken en in de css zetten. DIe zorgt ervoor dat de H1 niet zichtbaar is in layout, maar wel te horen is in de code. Je mag spans gebruiken, alleen voor de vormgeving.
   - punt 2
   - nog een punt
   - ...
