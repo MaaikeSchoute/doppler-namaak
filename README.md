@@ -105,7 +105,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <strong>Media (Video/audio):</strong> Media is pre-corded audio en video's.
   - Er is geen muziek of video die automatisch afspeelt.
   - Er is helemaal geen media.
-  - 
+  
+  <strong>Controls:</strong> 
   
 
 </details>
@@ -148,7 +149,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | ---          
   | Vraag, in de validator check staat: "Make sure that decorative images use null alt (empty) attribute values." Betekend dit dat niet alle alt teksten een alt tag nodig hebben?
   |Mag je elke 'grote selection' een #ID geven, zodat het bij de CSS makkelijker is om die te vinden ipv nth-of-type(blabla). Kun je dan in die sectie nth-of-type(blabla) gebruiken om 1,2,3 neer te zetten, ipv nth-of-type(20) heb je dan nth-of-type(2).
-
+  | moet de site ook duurzaam zijn? Kleine afbeeldingen
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
