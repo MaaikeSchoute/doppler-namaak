@@ -1,13 +1,18 @@
 /**************/
 /* CSS REMEDY */
 /**************/
+* {
+    font-family: Roboto, Open Sans, sans-serif;
+    box-sizing: border-box;
+    text-align: left;
+    color: #464a75;
+    margin: 0;
+    padding: 0;
+}
+
 *, *::after, *::before {
   box-sizing:border-box;  
 }
-
-
-
-
 
 
 /*********************/
@@ -16,16 +21,56 @@
 :root {
 	/* startje */
 	--color-text:#111;
-	--color-background:#eee;
+	--color-background:#F3F0ED;
 }
-
-
-
 
 
 /****************/
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
+h1 {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
 
+
+body {
+	background-image: url(../images/bg-body-2.jpg);
+}
+
+header {
+	padding: 2em;
+	background-image: url(../images/header/bg-header.jpg);
+	background-repeat: repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header img:nth-child(2) {
+	width: 195px;
+	margin-top: 10em;
+	margin-bottom: 10em;
+}
+
+header img:nth-child(3) {
+	width: 123px;
+}
+
+.off-screen-tinymenu {
+	background-color: #f9d748;
+	height: 100vh;
+	width: 500px;
+	position: fixed;
+	top: 0;
+}
+
+li {
+	list-style-type: none;
+}
