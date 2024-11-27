@@ -1,26 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-	
+<html lang="en">	
 <head>
 	<meta charset="UTF-8">
 	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Homepage DopplePress</title>
-	
+	<title>Homepage DopplePress</title>	
 	<link href="styles/style.css" rel="stylesheet">
+	<script src="scripts/script.js" defer></script>
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
-
 <body>
 	<header>
 		<h1>Homepage</h1> <!--Deze H1 moet onzichtbaar worden-->
-		<img src="images/header/header-logo.png" alt="logo Dopple Press text">
-		<img src="images/header/header-poppetje.png" alt="Dopplepress mascotte">
-		<button class="hamburger" aria-label="Open menu">☰</button>
-		
-		<div class="tinymenu"></div>
-		<nav class="off-screen-tinymenu">
+		<button class="hamburger" onclick="toggleMenu()" aria-label="Open menu"><svg 
+			xmlns="http://www.w3.org/2000/svg" 
+			width="40" height="30" 
+			viewBox="0 0 40 30"
+			aria-hidden="true" 
+			focusable="false">
+		  <!-- Bovenste lijn -->
+		  <rect class="line top" x="0" y="0" width="40" height="4" fill="black"></rect>
+		  <!-- Middelste lijn -->
+		  <rect class="line middle" x="0" y="13" width="40" height="4" fill="black"></rect>
+		  <!-- Onderste lijn -->
+		  <rect class="line bottom" x="0" y="26" width="40" height="4" fill="black"></rect>
+		</svg></button>
+		<nav class="menuHidden">
 			<ul>
 				<li><a href="index.html" aria-current="page">Home</a></li>
 				<li><a href="nep-link">Print</a></li>
@@ -30,11 +35,15 @@
 				<li><a href="nep-link">Contact</a></li>
 			</ul>
 		</nav>	
+		<img src="images/header/header-logo.png" alt="logo Dopple Press text">
+		<img src="images/header/header-poppetje.png" alt="Dopplepress mascotte">
 	</header>
 	<main>
-		<section>
-			<h2>✻ Buy Dopple.shop LTD Collaps ✻</h2>
-			<h2>✌︎ Buy Dopple.shop LTD Collaps ✌︎</h2>	
+		<section class="banner">
+			<div class="banner-content"></div>
+				<h2>✻ Buy Dopple.shop LTD Collaps ✻ ✌︎ Buy Dopple.shop LTD Collaps ✌︎</h2>
+				<h2>✻ Buy Dopple.shop LTD Collaps ✻ ✌︎ Buy Dopple.shop LTD Collaps ✌︎</h2>	
+			</div>
 		</section>	
 	</main>
 		<div>
