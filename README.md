@@ -212,6 +212,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Moet ik nog de breakdown schets veranderen/aanpassen naar de nieuwe indeling (minder sections meer lists!)
   UUUH GA IK DIT NOG REDDEN heb het gevoel dat dit vak herkansing wordt.
 
+  <strong>Alex</strong>
+  In teams staat hoe je fonts kunt toevoegen. Als je je website gaat openen op chrome. Dan ga je naar inspecteren. Klik op network: Zoek tabje 'all' die zet je op font. Dan ververs je de website, ne zie je een lijstje ontstaan met lettertypes. Dan dubble klik je erop, en download hij deze. Zorg ervoor dat je zo snel mogelijk met het juiste font werkt, omdat elk font net even anders is. Hierdoor kan de webpagina er heel anders uitzien als je deze veranderd. En kunnen elementen verschuiven.
+
+  Als je iets met animaties hebt, kun je met een query animaties stop zetten. REDUCE MOTION. Daar kun je naar kijken. Als je toegankelijkheid
+
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
