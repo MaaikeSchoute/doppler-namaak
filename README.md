@@ -140,7 +140,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Teveel sections. Maa meer lists. HTML code ziet er wel netjes uit, maar kijk of je wat sections weg halen. HTML zo clean mogelijk.
 
 
   ### Agenda voor meeting
@@ -172,6 +172,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
    3. plaatje
    dit kun je aanpassen met display flex. 
    Footer hoort ook in de body. Link van script moet ook in de body, niet in de main. Geen h1 in de footer. Er is op elke pagina maar 1 h1 in de pagina.
+
+   <strong>Maaike</strong>
   - Blokjes: mag als laatste als er tijd over is. Je mag gebruik maken van een library.  OVerflow snijd hij af. 
   Geen alt bij een background. Of als het gen inhoud communiceert. Figure image of caption. Hamburger menu wordt een NAV. geen ul. List item mmaken van alle risprinten afeeldingen. 1 section die bevan een Ul en een image. Carosel; heeft als uitzondering dat hij niet van links naar recht, maar voven naar beneden. De afbeeldingen zijn buttons. Een lijst met buttons en elke button is een afbeelding. Met javascript die laat de afbeeldignen switchen. Mag er 4 maken, hoeft niet allemaal. 
   Liever classes gebruiken dan nth's.
@@ -196,7 +198,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+  Vragen: 
+  • Hoe kan ik de banner tekst laten doorlopen?
+  • Waarom werkt mijn hamburger menu niet, en hoe kan ik deze bovenin rechts plaatsen?
+  • Waarom zijn ze niet allemaal even hoog?
+  • Met if else states, kan ik de vormgeving van het hamburger menu aanpassen, toch?
+  • Hoe zorg ik ervoor dat 2 verschillende items op elkaar passen?
+  • En hoe zorg ik ervoor dat deze responsive wordt? Grids lijkt niet te werken, of maak ik ergens een fout in de code?
+  • Risography, werkt met javascript. Nog tips? Hoe heet dit, waar kan ik op googlen?
+  • Menubalk onderin. Dat is gemaakt met svg. Mag ik eigen plaatjes daarvoor gebruiken?
+  • Mag ik nog veranderen van moeilijkheids challenge? Een extra opmaak vormgeving, ipv responsive (is veel moeilijker dan ik dacht, en ik ben ontzettend traag)
+  Nog andere tips die mij kunnen helpen? Hoe ik dit sneller/efficienter kan aanpakken?
+  Moet ik nog de breakdown schets veranderen/aanpassen naar de nieuwe indeling (minder sections meer lists!)
+  UUUH GA IK DIT NOG REDDEN heb het gevoel dat dit vak herkansing wordt.
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
