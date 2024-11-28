@@ -92,7 +92,7 @@ p {
 
 .banner-content {
 	display: flex; /* Plaatst de teksten naast elkaar */
-	animation: marquee 40s linear infinite; /* Voert de animatie continu uit */
+	animation: marquee 50s linear infinite; /* Voert de animatie continu uit */
   }
 
 .banner h2 {
@@ -101,7 +101,6 @@ p {
   }
 
   
-
   @keyframes marquee {
 	0% {
 	  transform: translateX(0%); /* Begin rechts buiten het scherm */
@@ -110,8 +109,6 @@ p {
 	  transform: translateX(-100%); /* Eindigt links buiten het scherm */
 	}
   }
-
-
 
 
 header img:nth-child(4) {
@@ -172,6 +169,90 @@ nav a {
 	text-decoration-skip-ink: auto;
 	color: white;
 	line-height: 1.8em;;
+}
+
+ul .orders {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.orders li img {
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr;
+}
+
+.orders li img {
+	width:100%;
+	height:auto;
+	align-self:stretch;
+	object-fit:cover;
+}
+
+.orders li:nth-child(2) img {
+	width:2em;
+	height:auto;
+}
+
+.orders li:nth-child(3) img {
+	width:100%;
+	height:auto;
+}
+
+.orders li:nth-child(4) img {
+	width:2em;
+	height:auto;
+}
+
+.orders li:last-child h2 {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.orders li:first-child {
+	background-image: url(../images/bg-doubledesign.png);
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center; 
+	width:100%;
+}
+
+.orders li:nth-of-type(2) {
+	background-image: url(../images/paint-smudge-center-full.png);
+	position: relative;
+  	padding-top: -20%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center; 
+	width:100%;
+}
+
+.orders li:nth-of-type(3) {
+	background-image: url(../images/header/bg-header.jpg);
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center; 
+	width:100%;
+}
+
+.risography {
+	background-image: url(../images/risioprint-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 
