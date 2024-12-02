@@ -180,8 +180,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   De site ook zo duurzaam mogelijk. Strong laat zien: dit is extra belangrijk. Span: dit ziet er anders aan. 
   Een section, met 1 ul's en 3 verschillende blokjes. 
 
-  - ...
-
 </details>
 
 
@@ -215,22 +213,33 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <strong>Alex</strong>
   In teams staat hoe je fonts kunt toevoegen. Als je je website gaat openen op chrome. Dan ga je naar inspecteren. Klik op network: Zoek tabje 'all' die zet je op font. Dan ververs je de website, ne zie je een lijstje ontstaan met lettertypes. Dan dubble klik je erop, en download hij deze. Zorg ervoor dat je zo snel mogelijk met het juiste font werkt, omdat elk font net even anders is. Hierdoor kan de webpagina er heel anders uitzien als je deze veranderd. En kunnen elementen verschuiven.
 
-  Als je iets met animaties hebt, kun je met een query animaties stop zetten. REDUCE MOTION. Daar kun je naar kijken. Als je toegankelijkheid
+  Als je iets met animaties hebt, kun je met een query animaties stop zetten. REDUCE MOTION. Daar kun je naar kijken. Als je toegankelijkheid doet. Zorg ervoor dat je validator 0 fouten aangeeft. Je mag geen spaties in de namen van je foto's hebben. Je kan wel een - of _ ipv spatie doen, als je 2 losse woorden wilt hebben. Controleer regelmatig of je validator errors aangeeft. 
+  Om text onder het plaatje te kenenn, kun je met order aan geven wat als eerste en als 2e moet. Met Flexbox.
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  <strong>Alyaman</strong>
+  Je gaat naar youtube, delen , insluiten. Kun je afspeeldbediening of niet (handig wel te doen), je kopieerd en plakt deze in de website. Je hebt een mini website in een website. En je hebt een video vanuit je files. Dit telt niet mee uit de 5 dingen die je moet kiezen. Alyaman heeft responsive. Kopieer vanuit youtube als je wilt dat hij meteen werkt. Iets meen videoplayer. Het is een video die hetzelfde werkt als een hamburger menu. Hij komt als een pop up. Je kan hamburger menu kopieren, en dan komt een vid ipv een menu. De stijling van het kruisje is ook exact hetzelfde. 
+
+  Wat is taxindext en autofoces en autofoces. Heeft te maken met een screenreader. Dit helpt dat je dingen kan skippen. Weet alleen niet hoe het werkt. 
+
+  Time out? Als je een dag niet op dlo bent ingelogt, logt hij je vanzelf uit. 
+
+  <strong>Maaike</strong>
+  Chatbox bij dynamisch deel
+  samenvatting van toeganlijkheids onderzoek vor jezelf.
+ • Werk met margins. 2 losse p, en dan margins aanpassen. 
+  Hoe kan ik de banner tekst laten doorlopen? : Kan (nog) niet. Laat lekker zo zitten.
+ •  Waarom werkt mijn hamburger menu niet, en hoe kan ik deze bovenin rechts plaatsen? : Gaan we dinsdag in de les mee aan de slag. 
+ Zorg dat alle makkelijke dingen al klaar staan. Dan kunne we daar dinsdag aan zitten. 
+
+  <strong>Sharlaine</strong>
+  Samen kijken naar dingen. verzamel bewijs om te laten wat je allemaal hebt geprobeerd, om inzet te laten zien. En ook te kunnen laten ziet dat je alles hebt geprobeerd wat je kon. Sharlaine, kijk naar de validator errors. Script moet boven body staan.
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Maak alles wat je kan maken. Zorg ervoor dat alles in de HTML staat, en geef vorm wat je kunt vormgeven.
+  - Ga dinsdag samen met thomas zitten en kijk wat er nog gedaan moet worden.
+  - Je gaat dit halen!
 
 </details>
 
@@ -242,6 +251,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
+  Vragen:
+  • Moeten de namen van de afbeeldingen ook allemaal naar het engels, als de site in en staat?
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):

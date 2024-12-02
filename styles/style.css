@@ -40,7 +40,7 @@
 
 @font-face {
     font-family: Anasge;
-    font-weight: regular;
+    font-weight: medium;
     src: url(../font/ansage-regular-xp.otf);
 }
 
@@ -91,22 +91,22 @@ p {
 }
 
 .banner-content {
-	display: flex; /* Plaatst de teksten naast elkaar */
-	animation: marquee 50s linear infinite; /* Voert de animatie continu uit */
+	display: flex; 
+	animation: marquee 50s linear infinite;
   }
 
 .banner h2 {
-	position: absolute; /* Zorgt ervoor dat de tekst vrij kan bewegen */
-	animation: marquee 20s linear infinite; /* Voert de animatie uit */
+	position: absolute;
+	animation: marquee 20s linear infinite;
   }
 
   
   @keyframes marquee {
 	0% {
-	  transform: translateX(0%); /* Begin rechts buiten het scherm */
+	  transform: translateX(0%);
 	}
 	100% {
-	  transform: translateX(-100%); /* Eindigt links buiten het scherm */
+	  transform: translateX(-100%);
 	}
   }
 
@@ -170,6 +170,10 @@ nav a {
 	color: white;
 	line-height: 1.8em;;
 }
+
+/****************/
+/* Dopple Shop, Prints & Design */
+/****************/
 
 ul .orders {
 	margin: 0;
@@ -255,5 +259,7 @@ ul .orders {
 	background-size: cover;
 }
 
-
+/****************/
+/* Dopple Shop, Prints & Design */
+/****************/
 
