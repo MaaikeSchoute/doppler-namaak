@@ -44,9 +44,15 @@
     src: url(../font/ansage-regular-xp.otf);
 }
 
+@font-face {
+    font-family: two;
+    font-weight: medium;
+    src: url(../font/2.woff);
+}
+
 
 body {
-	background-image: url(../images/bg-body.jpg);
+	background-image: url(../images/header/bg-header.jpg);
 }
 
 
@@ -70,7 +76,7 @@ h1 {
 }
 
 h2 {
-	font-family: Brice, sans-serif;
+	font-family: Brice;
 	font-weight: bold;
 	color: #FEFCF2;
 	font-size: 3rem;
@@ -181,52 +187,49 @@ ul .orders {
 	list-style: none;
 }
 
-.orders li img {
-	display: grid;
-	grid-template-columns:1fr 1fr 1fr;
-}
-
-.orders li img {
-	width:100%;
-	height:auto;
-	align-self:stretch;
-	object-fit:cover;
-}
-
-.orders li:nth-child(2) img {
-	width:2em;
-	height:auto;
-}
-
-.orders li:nth-child(3) img {
-	width:100%;
-	height:auto;
-}
-
-.orders li:nth-child(4) img {
-	width:2em;
-	height:auto;
-}
-
-.orders li:last-child h2 {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
+.orders li {
+	height: 27em;
 }
 
 .orders li:first-child {
-	background-image: url(../images/bg-doubledesign.png);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../images/backgrounds/bg-doubledesign.png);
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center; 
+	width:100%;
+	height:27em;
+}
+/*Bron: https://chatgpt.com/share/674ddfc5-43e8-8009-b34f-1faf6b260f08: Maar hoe zorg ik ervoor dat de afbeelding in het midden van de parent staat?*/
+.orders li:first-child img {
+	display: block;
+	position: absolute; 
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%, -50%); 
+	width: 70%;
+	z-index: 1;
+}
+
+/*Bron: https://chatgpt.com/share/674ddfc5-43e8-8009-b34f-1faf6b260f08: hoe kan ik aangeven, dat wanneer een tekst buiten een bepaalde breedte gaat, hij zichzelf onder elkaar zet? css*/
+.orders li:first-child h2 {
+	overflow-wrap: break-word;
+	line-height: 1em;
+	z-index: 2;
+	white-space: normal;
+	z-index: 2;
+	position: absolute;
+	text-align: center;
+}
+
+.orders li:nth-of-type(2) {
+	background-image: url(../images/backgrounds/paint-smudge-center-full.png);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: relative;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -234,14 +237,25 @@ ul .orders {
 	width:100%;
 }
 
-.orders li:nth-of-type(2) {
-	background-image: url(../images/paint-smudge-center-full.png);
-	position: relative;
-  	padding-top: -20%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center; 
-	width:100%;
+.orders li:nth-of-type(2) h2 {
+	color: #EB5E29;
+	font-family: Guntez;
+    font-weight: bold;
+	overflow-wrap: break-word;
+	line-height: 1em;
+	white-space: normal;
+	position: absolute;
+	text-align: center;
+	z-index: 1;
+}
+
+.orders li:nth-of-type(2) img {
+	width: 1em;
+	height: 3em;
+	z-index: 2;
+	position: absolute;
+	left:11.8em;
+	top: 13em;
 }
 
 .orders li:nth-of-type(3) {
@@ -253,13 +267,38 @@ ul .orders {
 	width:100%;
 }
 
+.orders li:nth-of-type(3) h2 {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.orders li:nth-of-type(3) img {
+	height: 10em;
+	z-index: 2;
+}
+
+.orders li:nth-of-type(3) img:nth-child(2) {
+	height: 16em;
+	z-index: 1;
+}
+
+
+
+
+
+/****************/
+/* Risography */
+/****************/
+
 .risography {
 	background-image: url(../images/risioprint-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-/****************/
-/* Dopple Shop, Prints & Design */
-/****************/
 
