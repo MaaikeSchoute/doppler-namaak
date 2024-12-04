@@ -50,11 +50,9 @@
     src: url(../font/2.woff);
 }
 
-
 body {
 	background-image: url(../images/header/bg-header.jpg);
 }
-
 
 header {
 	padding: 2em;
@@ -116,7 +114,6 @@ p {
 	}
   }
 
-
 header img:nth-child(4) {
 	width: 195px;
 	margin-top: 10em;
@@ -138,17 +135,13 @@ header img:nth-child(5) {
 /****************/
 
 /* Hamberuger menu */
-/* https://chatgpt.com/share/6746ffdf-0034-8009-b2a8-0d1bad92665c */
-.menuHidden {
-	display: none;
-}
 
 /* maakt hamburger knop mooi*/
 .hamburger {
 	border: none;
 	width: 3em;
 	position:sticky;
-	top:-4em;
+	top: 4em;
 	z-index:10;
 }
 
@@ -160,6 +153,7 @@ nav {
 	font-weight: bold;
 	font-size: 2.5em;
 	letter-spacing: 0.1em;
+	background-color: #FFD500;
 }
 
 nav li {
@@ -182,6 +176,8 @@ nav a {
 /****************/
 
 ul .orders {
+	display: grid;
+	place-content:center;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -278,7 +274,7 @@ ul .orders {
 }
 
 .orders li:nth-of-type(3) img {
-	height: 10em;
+	height: 5em;
 	z-index: 2;
 }
 
@@ -286,9 +282,6 @@ ul .orders {
 	height: 16em;
 	z-index: 1;
 }
-
-
-
 
 
 /****************/
