@@ -269,17 +269,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Gewerkt aan  responsive maken afbeeldingen homepage:
+  <img src="readme-images/week4-probeersels/home-img-responsive-maken-0-bron-chatgtp.png">
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  • Hoe kan ik de tekst van buttons specifiek targetten?
+  • zorgen dat de afbeelding naast de tekst komt te staan?
+  • Regualr is geen geldige code??
+  • snap nog steeds niks van hamburger menu, en de animatie werkt niet, zoals in mijn bron.. help?
+  • Foutmelding, mag geen span gebruiken	om text kleur oranje te maken, wat moet veranderd?
+  • Hele lange naam fonts, ik houd gewoon de fonts die ik al had. Niet precies hetzelfde, maar goed genoeg denk ik.
 
 
   ### Verslag van meeting

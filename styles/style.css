@@ -2,7 +2,6 @@
 /* CSS REMEDY */
 /**************/
 * {
-    box-sizing: border-box;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -17,12 +16,68 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
 	--color-text:#111;
-	--color-background:#F3F0ED;
+	--animation-text-color: #FEFCF2;
+	--color-background: #F3F0ED;
+	--banner-background-color: #fe4f4f;
+	--yellow-color: #FFD500;
+	--blue-color: #52B1E4;
+	--pink-color: #EC79AD;
+
+	--bar-width: 30px;
+	--bar-height: 4px;
+	--hamburger-gap: 4.5px;
+	--hamburger-margin: 1em;
+	--transform-origin: left center;
+	--animation-timing: 200ms ease-in-out;
 }
 
 
+/*********************/
+/* HAMBURGER MENU POGING 2 */
+/*********************/
+/*Bron: https://www.youtube.com/watch?v=dAIVbLrAb_U*/
+.hamburger-menu {
+	display: flex;
+	flex-direction: column;
+	gap: var(--hamburger-gap);
+	width: max-content;
+	position: absolute;
+	z-index: 2;
+	cursor: pointer; 
+}
+
+.hamburger-menu::after,
+.hamburger-menu::before,
+.hamburger-menu input {
+	content: "";
+	width:var(--bar-width);
+	height:var(--bar-height);
+	background-color: var(--color-text);
+	transition: opacity var(--animation-timing), width var(--aniimation-timing);
+}
+
+.hamburger-menu input {
+	appearance: none;
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+
+.hamburger-menu:has(input-checked)::before {
+	animation-name: before;
+}
+
+.hamburger-menu:has(input-checked)::after {
+	animation-name: after;
+}
+
+
+.hamburger-menu input:checked {
+	opacity: 0;
+	width: 0;
+}
+	
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -40,13 +95,11 @@
 
 @font-face {
     font-family: Anasge;
-    font-weight: medium;
     src: url(../font/ansage-regular-xp.otf);
 }
 
 @font-face {
     font-family: two;
-    font-weight: medium;
     src: url(../font/2.woff);
 }
 
@@ -58,9 +111,6 @@ header {
 	padding: 2em;
 	background-image: url(../images/header/bg-header.jpg);
 	background-repeat: repeat;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 h1 {
@@ -76,7 +126,7 @@ h1 {
 h2 {
 	font-family: Brice;
 	font-weight: bold;
-	color: #FEFCF2;
+	color: var(--animation-text-color);
 	font-size: 3rem;
 	white-space: nowrap; 
 }
@@ -85,12 +135,15 @@ p {
 	font-family: Anasge;
 }
 
+/****************/
+/* BANNER */
+/****************/
 .banner {
 	display: flex;
 	overflow: hidden;
-	background-color: #fe4f4f;
+	background-color: var(--banner-background-color);
 	height: 7rem;
-	position: relative; /* Nodig voor het positioneren van de animatie */
+	position: relative;
 	padding-top: 1em;
 }
 
@@ -103,7 +156,6 @@ p {
 	position: absolute;
 	animation: marquee 20s linear infinite;
   }
-
   
   @keyframes marquee {
 	0% {
@@ -114,29 +166,52 @@ p {
 	}
   }
 
-header img:nth-child(4) {
-	width: 195px;
-	margin-top: 10em;
-	margin-bottom: 10em;
-}
-
-header img:nth-child(5) {
-	width: 123px;
-}
-
-.off-screen-tinymenu {
-	background-color: #FFD500;
-	height: 100vh;
-	width: 500px;
-}
-
 /****************/
-/* MENU */
+/* HEADER HOME */
 /****************/
 
-/* Hamberuger menu */
+  /* bron: home images responsive: hoe kan ik ervoor zorgen dat de afbeeldingen gelijkmatig mee schalen, wanneer ik de window, groter en kleiner maak?: https://chatgpt.com/share/675030df-e798-8009-bff0-14650a2e81ff*/
+  .home-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .1rem;
+    max-height: 70vh;
+    overflow: hidden;
+	margin-bottom: 5em;
+}
 
-/* maakt hamburger knop mooi*/
+.home-img img {
+    max-height: 13em;
+    width: auto;
+    object-fit: contain;
+}
+
+.home-img img:first-child {
+    max-height: 6em;
+    width: auto;
+    object-fit: contain;
+}
+
+/* bron: de afbeeldingen mogen groter zijn vanaf desktop formaat: https://chatgpt.com/share/675030df-e798-8009-bff0-14650a2e81ff  */
+@media (min-width: 1024px) {
+    .home-img img {
+        max-height: 30em;
+    }
+
+    .home-img img:first-child {
+        max-height: 15em;
+    }
+}
+
+
+/****************/
+/* HAMBURGER MENU POGING 1 */
+/****************/
+
+/* Hamburger menu */
+
+/* maakt hamburger knop mooi
 .hamburger {
 	border: none;
 	width: 3em;
@@ -144,6 +219,7 @@ header img:nth-child(5) {
 	top: 4em;
 	z-index:10;
 }
+	
 
 nav {
 	display: flex;
@@ -161,47 +237,43 @@ nav li {
 	text-align: center;
 }
 
-nav a {
-	/* https://chatgpt.com/share/6746f87a-fa30-8009-9a5b-1c0ee0dbdf64 */
+/* https://chatgpt.com/share/6746f87a-fa30-8009-9a5b-1c0ee0dbdf64 */
+/*nav a {
 	text-decoration: underline;
 	text-underline-offset: 0.5em;
 	text-decoration-thickness: 1px;
 	text-decoration-skip-ink: auto;
 	color: white;
 	line-height: 1.8em;;
-}
+}*/
 
 /****************/
 /* Dopple Shop, Prints & Design */
 /****************/
 
-ul .orders {
+ul.orders {
 	display: grid;
-	place-content:center;
-	margin: 0;
-	padding: 0;
+	grid-template-columns: repeat(auto-fit, minmax(33vw, 1fr));
 	list-style: none;
 }
-
+ 
 .orders li {
-	height: 27em;
+	min-height: 50vh;
 }
 
 .orders li:first-child {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url(../images/backgrounds/bg-doubledesign.png);
 	position: relative;
+	background-image: url(../images/backgrounds/bg-doubledesign.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center; 
-	width:100%;
-	height:27em;
 }
+
 /*Bron: https://chatgpt.com/share/674ddfc5-43e8-8009-b34f-1faf6b260f08: Maar hoe zorg ik ervoor dat de afbeelding in het midden van de parent staat?*/
 .orders li:first-child img {
-	display: block;
 	position: absolute; 
 	top: 50%; 
 	left: 50%;
@@ -212,11 +284,11 @@ ul .orders {
 
 /*Bron: https://chatgpt.com/share/674ddfc5-43e8-8009-b34f-1faf6b260f08: hoe kan ik aangeven, dat wanneer een tekst buiten een bepaalde breedte gaat, hij zichzelf onder elkaar zet? css*/
 .orders li:first-child h2 {
+	font-size: 5em;
 	overflow-wrap: break-word;
 	line-height: 1em;
 	z-index: 2;
 	white-space: normal;
-	z-index: 2;
 	position: absolute;
 	text-align: center;
 }
@@ -230,13 +302,14 @@ ul .orders {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center; 
-	width:100%;
 }
 
 .orders li:nth-of-type(2) h2 {
 	color: #EB5E29;
 	font-family: Guntez;
     font-weight: bold;
+	padding: 1em;
+	font-size: 5em;
 	overflow-wrap: break-word;
 	line-height: 1em;
 	white-space: normal;
@@ -246,23 +319,28 @@ ul .orders {
 }
 
 .orders li:nth-of-type(2) img {
-	width: 1em;
-	height: 3em;
+	width: auto;
+	height: 5em;
 	z-index: 2;
 	position: absolute;
-	left:11.8em;
-	top: 13em;
+	right: 17.35vw;
+	bottom: 19vh;
 }
 
 .orders li:nth-of-type(3) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-image: url(../images/header/bg-header.jpg);
 	position: relative;
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-position: center; 
 	width:100%;
+	z-index: 1;
 }
 
+/*verbergt H2*/
 .orders li:nth-of-type(3) h2 {
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);
@@ -273,15 +351,69 @@ ul .orders {
 	width: 1px;
 }
 
-.orders li:nth-of-type(3) img {
-	height: 5em;
+.orders li:nth-of-type(3) img:nth-child(2) {
+	position:absolute;
+	height: 20vh;
+	width: auto;
 	z-index: 2;
 }
 
-.orders li:nth-of-type(3) img:nth-child(2) {
-	height: 16em;
+.orders li:nth-of-type(3) img:last-child {
+	position:absolute;
+	height: 19vh;
+	right: 12vw;
+	top: 4em;
 	z-index: 1;
 }
+
+@media (max-width: 1024px) {
+	ul.orders {
+	  grid-template-columns: 1fr; /* Zorg ervoor dat de lijstitems onder elkaar staan */
+	}
+  
+	.orders li {
+	  min-height: 50vh; /* Zorg ervoor dat de hoogte automatisch is */
+	}
+
+	.orders li:first-child h2 {
+		font-size: 3em;
+	}
+
+	.orders li:nth-of-type(1) {
+		order: 2;
+	}
+
+	.orders li:nth-of-type(2) {
+		order: 1;
+	}
+
+	.orders li:nth-of-type(3) {
+		order: 3;
+	}
+
+	.orders li:nth-of-type(2) h2 {
+		font-size: 3em;
+	}
+
+	.orders li:nth-of-type(2) img {
+		width: auto;
+		height: 3em;
+		right: 52.3vw;
+		bottom: 20vh;
+	}
+
+	.orders li:nth-of-type(3) img:nth-child(2) {
+		height: 15vh;
+		width: auto;
+	}
+
+	.orders li:nth-of-type(3) img:last-child {
+		top: 10vh;
+		right: 35vw;
+		height: 15vh;
+	}
+
+  }
 
 
 /****************/
@@ -289,9 +421,76 @@ ul .orders {
 /****************/
 
 .risography {
-	background-image: url(../images/risioprint-bg.jpg);
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	background-image: url(../images/backgrounds/risioprint-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+/* bron: tabs: How to make tabs: https://www.youtube.com/watch?app=desktop&v=5L6h_MrNvsk&t=3m58s */ 
+[data-tab-content] {
+	display: none;
+}
+
+.active[data-tab-content] {
+	display: block;
+}
+
+.tab-content p {
+	font-size: 1em;
+	list-style-type: none;
+	line-height: 1.5em;
+}
+
+#process {
+	grid-area: 2 / 2 / 3 / 3;
+	width: 30VW;
+	margin-top: 10vh;
+}
+
+.tabs { 
+	grid-area: 1 / 2 / 2 / 3;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border:1px;
+	border-radius:5em;
+}
+
+.tab.active {
+	background-color: #EB5E29;
+	transition: font-size 0.3s ease;
+}
+
+.tab:hover {
+	background-color:var(--banner-background-color);
+	font-size: 2em;
+}
+
+.risography button {
+	font-family: Brice;
+	font-weight: bold;
+	font-size: 1.3em;
+	padding:1em;
+	padding-left:2em;
+	padding-right:2em;
+	border-radius: 50vh;
+}
+
+.risography img {
+	order: 1;
+	grid-area: 1 / 2 / 2 / 3;
+	width: 40vw;
+}
+
+.tabs ul{
+	display: flex;
+	justify-content: center;
+	list-style: none;
 }
 
 

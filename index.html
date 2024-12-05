@@ -12,72 +12,68 @@
 	<body>
 		<header>
 			<h1>Homepage</h1>
-			<button class="hamburger" onclick="toggleMenu()" aria-label="Open menu"><svg 
-				xmlns="http://www.w3.org/2000/svg" 
-				width="40" height="30" 
-				viewBox="0 0 40 30"
-				aria-hidden="true" 
-				focusable="false">
-			<rect class="line top" x="0" y="0" width="40" height="4" fill="black"></rect>
-			<rect class="line middle" x="0" y="13" width="40" height="4" fill="black"></rect>
-			<rect class="line bottom" x="0" y="26" width="40" height="4" fill="black"></rect>
-			</svg></button>
-			<nav class="menuHidden">
-				<button><img src=""></button>
-				<ul>
-					<li><a href="index.html" aria-current="page">Home</a></li>
-					<li><a href="nep-link">Print</a></li>
-					<li><a href="shop.html">Shop</a></li>
-					<li><a href="nep-link">Design</a></li>
-					<li><a href="nep-link">Blog</a></li>
-					<li><a href="nep-link">Contact</a></li>
-				</ul>
-			</nav>	
-			<img src="images/header/header-logo.png" alt="logo Dopple Press text">
-			<img src="images/header/header-poppetje.png" alt="Dopplepress mascotte">
+			<lablel class="hamburger-menu">
+				<input type="checkbox">
+			</lablel>
+			<aside class="sidebar">
+				<!--
+				<nav>
+					<ul>
+						<li><a href="index.html" aria-current="page">Home</a></li>
+						<li><a href="nep-link">Print</a></li>
+						<li><a href="shop.html">Shop</a></li>
+						<li><a href="nep-link">Design</a></li>
+						<li><a href="nep-link">Blog</a></li>
+						<li><a href="nep-link">Contact</a></li>
+					</ul>
+				</nav>	-->	
+			</aside>	
 		</header>
 		<main>
+			<div class="home-img">
+				<img src="images/header/header-logo.png" alt="logo Dopple Press text">
+				<img src="images/header/header-poppetje.png" alt="Dopplepress mascotte">
+			</div>
 			<section class="banner">
 				<div class="banner-content">
 					<h2>✻ Buy Dopple.shop LTD Collaps ✻ ✌︎ Buy Dopple.shop LTD Collaps ✌︎</h2>
 					<h2>✻ Buy Dopple.shop LTD Collaps ✻ ✌︎ Buy Dopple.shop LTD Collaps ✌︎</h2>	
 				</div>
 			</section>	
-		</main>
 			<ul class="orders">
 				<li>
 					<h2>Dopple Design</h2>
-					<img src="images/shapes/ster.png" alt="Ster afbeelding achter text, decoratie">
+					<img src="images/shapes/ster.png" alt="Star behind text, decoration">
 				</li>
 				<li>
 					<h2>Order Prints</h2>
-					<img src="images/shapes/tube-text.png" alt="I van prints">
+					<img src="images/shapes/tube-text.png" alt="I from prints">
 				</li>
 				<li>
-					<h2>Douple shop</h2>
-					<img src="images/header/header-logo.png" alt="logo">
-					<img src="images/shapes/peace-hands.png" alt="Ster afbeelding achter text, decoratie">
+					<h2>Dopple shop</h2>
+					<img src="images/shapes/dopple-shop.png" alt="logo">
+					<img src="images/shapes/peace-hands.png" alt="peace hands decoration.">
 				</li>
 			</ul>
-			<div class="risography">
-				<section>
-					<ul>
-						<li>
-							<button>Process</button>
-						</li>	
-						<li>
-							<button>History</button>
-						</li>
-						<li>
-							<button>Faqs</button>
-						</li>
-						<li>
-							<button>Dopple</button>
-						</li>
-					</ul>	
-					<h2>Risography</h2>
-					<section>
-						<h2>Process</h2> <!--Deze H2 moet ontzichtbaar worden-->
+			<section class="risography">
+			<div class="tabs">
+				<ul>
+					<li>
+						<button data-tab-target="#process" class="active tab">Process</button>
+					</li>	
+					<li>
+						<button data-tab-target="#history" class="tab">History</button>
+					</li>
+					<li>
+						<button data-tab-target="#faqs" class="tab">Faqs</button>
+					</li>
+					<li>
+						<button data-tab-target="#dopple" class="tab">Dopple</button>
+					</li>
+				</ul>	
+				
+				<section class="tab-content">
+					<div id="process" data-tab-content class="active">
 						<p>
 							The Risograph is a stencil duplicator machine that works in a similar way to screen printing. 
 							It creates a stencil from banana paper, this is then wrapped around an ink drum and soy ink is 
@@ -91,9 +87,8 @@
 							Hence all the Ink canister lamp.
 						</p>
 						<p><strong>TL:DR  It's a cool eco-friendly screen printing machine</strong></p>
-					</section>
-					<section>
-						<h2>History</h2> <!--Deze H2 moet ontzichtbaar worden-->
+					</div>
+					<div id="history" data-tab-content>
 						<p>
 							Risograph printing originated, in the 1980s, brought into the world by the RISO Kagaku Corporation 
 							(in Japanese, 'Riso' means 'ideal' and the word 'Kagaku' means 'science). 
@@ -104,55 +99,36 @@
 							art prints. Using Riso in this new way has enabled artists to create stencil prints with an aesthetic 
 							akin to a screen print but at a much lower price.
 						</p>
-					</section>
-					<section>
-						<img src="images/ster-geel.png" alt="Gele ster achtergrond">
-						<h2>FAQS</h2> <!--Deze H2 moet ontzichtbaar worden-->
-						<p>
-							Having been in the Riso biz for over half a decade there are some questions that tend to pop up over 
-							and over so hopefully, these are of help if you have more drop an email!
-						</p>
-						<p><strong>What's the maximum print Size?​</strong> A3 (with a 3-5mm border)
-						</p>
-						<p>
-							​<strong>What's the minimum quantity I can print?​</strong>
+					</div>
+					<div id="faqs" data-tab-content>
+						<p> Having been in the Riso biz for over half a decade there are some questions that tend to pop up over 
+							and over so hopefully, these are of help if you have more drop an email!</p>
+						<p><strong>What's the maximum print Size?​</strong> A3 (with a 3-5mm border)</p>
+						<p>​<strong>What's the minimum quantity I can print?​</strong>
 							You can print as little as one but just like a screenprint the more you run from your set up the better 
-							the unit price becomes.
-						</p>
-						<p>
-							​<strong>What are prices based on?​</strong>
-							Prices are based on the no. of colour stencils, dimension, quantity and stock.
-						</p>
-						<p>
-							​<strong>What do I need to send Dopple to create my riso print?​</strong>
-							check out the 'prepping your artwork' section here!
-						</p>
-						<p>
-							​<strong>What's the best thing to print?​</strong>
+							the unit price becomes.</p>
+						<p>​<strong>What are prices based on?​</strong>
+							Prices are based on the no. of colour stencils, dimension, quantity and stock.</p>
+						<p>​<strong>What do I need to send Dopple to create my riso print?​</strong>
+							check out the 'prepping your artwork' section here!</p>
+						<p>​<strong>What's the best thing to print?​</strong>
 							Dopple will advise and help you to achieve a great outcome no matter your artwork but the most economical 
-							pieces use few colours in higher quantities.
-						</p>
-					</section>
-					<section>
-						<h2>Doupple</h2> <!--Deze H2 moet ontzichtbaar worden-->
-						<p>				
-							Dopple Press is a Brighton, UK based Risography studio, dedicated to creating the highest quality print and design. 
+							pieces use few colours in higher quantities.</p>
+					</div>
+					<div id="dopple" data-tab-content>
+						<p>	Dopple Press is a Brighton, UK based Risography studio, dedicated to creating the highest quality print and design. 
 							Since starting up in 2015 Dopple Press has had the pleasure of working with hundreds of fantastic creatives, companies, 
-							institutions, startups, students and more.
-						</p>
-						<p>	
-							The name Dopple originates from the word 'Doppelganger', meaning to look the same but not identical. In its nature, this 
+							institutions, startups, students and more.</p>
+						<p>	The name Dopple originates from the word 'Doppelganger', meaning to look the same but not identical. In its nature, this 
 							is exactly what you can expect from the Riso process. Each print will come with its own individual quirks thanks to the 
-							Riso process, making every print unique.
-						</p>
-						<p> 
-							Risograph is Dopple's bread and butter and with over 15 years in design and publishing, Dopple can support any project 
-							from start to finish.
-						</p>
-					</section>	
-						<img src="images/printer.gif" alt="gif van risoprinter">	
+							Riso process, making every print unique.</p>
+						<p> Risograph is Dopple's bread and butter and with over 15 years in design and publishing, Dopple can support any project 
+							from start to finish.</p>
+					</div>	
+					<img src="images/shapes/printer.gif" alt="gif van risoprinter">	
 				</section>
 			</div>
+			</section>
 			<section class="soyinkts">
 				<h2>SOY INKS</h2>
 				<p> The risograph has its own special colour pallet. Dopple has 12 colours ranging from rich deep tones to vibrant fluorescents. 
@@ -242,6 +218,7 @@
 				<li><img src="images/paper/9.jpg" alt="Spooky Froggy art"></li>
 				<li><img src="images/paper/10.jpg" alt="Free Print!"></li>
 			</ul>
+		</main>
 		<footer>
 		
 		
