@@ -72,7 +72,6 @@
 	animation-name: after;
 }
 
-
 .hamburger-menu input:checked {
 	opacity: 0;
 	width: 0;
@@ -138,6 +137,7 @@ p {
 /****************/
 /* BANNER */
 /****************/
+/*bron: Hoe kan ik ervoor zorgen, dat er een text banner komt op mijn website? De tekst loopt van rechts, naar links. Het verwijst uit beeld aan de linkerkant, en verschijnt weer aan de rechterkant. Dit is hoe die code er nu uitziet: https://chatgpt.com/share/6746ffdf-0034-8009-b2a8-0d1bad92665c */
 .banner {
 	display: flex;
 	overflow: hidden;
@@ -208,6 +208,7 @@ p {
 /****************/
 /* HAMBURGER MENU POGING 1 */
 /****************/
+/*bron: Hoe kan ik 3 lijnen maken, met de hulp van svg, voor de opmaak van een hamburger menu? https://chatgpt.com/share/6746ffdf-0034-8009-b2a8-0d1bad92665c*/
 
 /* Hamburger menu */
 

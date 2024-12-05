@@ -269,8 +269,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Gewerkt aan  responsive maken afbeeldingen homepage:
+  Gewerkt aan responsive maken van afbeeldingen op de homepage.
+  Poging 1:
   <img src="readme-images/week4-probeersels/home-img-responsive-maken-0-bron-chatgtp.png">
+   poging 2:
+  <img src="readme-images/week4-probeersels/home-img-responsive-maken1.png">
+    poging 3:
+  <img src="readme-images/week4-probeersels/home-img-responsive-maken2.png">
+  
+  Gewerkt aan maken hamburger menu, mobile screen:
+  Poging 1:
+  <img src="readme-images/week4-probeersels/hamburgermenu.png">
+    Poging 2:
+  <img src="readme-images/week4-probeersels/hamburgermenu.png">
+  En heb nog veeeeeeeeel meer geprobeerd, maar dat is allemaal niet gelukt :'D 
+
+  responsive maken van de 3 blokjes Dopple shop,Prints & Design:
+  Bijna gehele css code om dit voor elkaar te krijgen:
+  <img src="readme-images/week4-probeersels/dopple-shop-alles-op-juiste-plaats.png">
+
+  Grid proberen te maken in kopje RISOPRINT 
+  <img src="readme-images/week4-probeersels/grid-probeersel-risprint-home.png">
 
   ### Agenda voor meeting
   • Hoe kan ik de tekst van buttons specifiek targetten?
