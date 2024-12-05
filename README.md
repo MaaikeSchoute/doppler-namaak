@@ -283,6 +283,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
     Poging 2:
   <img src="readme-images/week4-probeersels/hamburgermenu.png">
   En heb nog veeeeeeeeel meer geprobeerd, maar dat is allemaal niet gelukt :'D 
+  moet hier nog maar een keer goed naar kijken: https://css-tricks.com/hamburger-menu-with-a-side-of-react-hooks-and-styled-components/
 
   responsive maken van de 3 blokjes Dopple shop,Prints & Design:
   Bijna gehele css code om dit voor elkaar te krijgen:
