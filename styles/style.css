@@ -424,7 +424,7 @@ ul.orders {
 .risography {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-rows: repeat(1, 1fr);
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	position: relative;
@@ -434,13 +434,22 @@ ul.orders {
 }
 
 /* bron: tabs: How to make tabs: https://www.youtube.com/watch?app=desktop&v=5L6h_MrNvsk&t=3m58s */ 
+/*bron: hoe voeg je slidedown toe aan tabs? https://chatgpt.com/share/6751fd87-6250-8009-bd60-bb8c346a1046*/
 [data-tab-content] {
-	display: none;
+	opacity: 0; 
+	transform: translateY(-20px);
+	position: absolute;
+	visibility: hidden;
+	transition: opacity 0.3s ease, transform 0.5s ease;
+	height: 100%;
+	width: 100%;
 }
 
 .active[data-tab-content] {
-	display: block;
-}
+	opacity: 1; /* Maak de inhoud zichtbaar */
+	transform: translateY(0); /* Laat de inhoud van boven naar beneden bewegen */
+	visibility: visible;
+  }
 
 .tab-content p {
 	font-size: 1em;
@@ -455,33 +464,49 @@ ul.orders {
 #faqs,
 #dopple  {
 	grid-area: 3 / 2 / 4 / 3;
-	width: 25VW;
+	width: 27VW;
 	margin-top: 3vh;
+	animation-name: slideDown;
+	transition: opacity 0.3s ease, transform 1s ease;
+}
+
+.tabs ul li:first-child{
+	z-index: 1;
+	rotate: -25deg;
+	transform: translateX(-8em);
+}
+
+.tabs ul li:nth-child(2){
+	z-index:2;
+	rotate: 25deg;
+	transform: translateX(20em);
+	transform: translateY(6em);
+}
+
+.tabs ul li:nth-child(3){
+	z-index:3;
+	rotate: -15deg;
+	position:absolute;
+	top:-1em;
 }
 
 .tabs { 
 	grid-area: 1 / 2 / 2 / 3;
 	list-style-type: none;
-	margin-top: 5em;
+	margin-top: 11em;
 	padding: 0;
 	border:1px;
 	border-radius:5em;
-}
-
-.tab.active {
-	background-color: #EB5E29;
-	transition: font-size 0.3s ease;
-}
-
-.tab:hover {
-	background-color:var(--banner-background-color);
-	font-size: 2em;
+	position: relative;
 }
 
 .risography button {
+	display: inline-flex; /* Zorgt ervoor dat de knop zich aanpast aan de tekst */
+ 	align-items: center; /* Centreer de tekst verticaal */
+ 	justify-content: center;
 	font-family: Brice;
 	font-weight: bold;
-	font-size: 1.3em;
+	font-size: 1.8em;
 	padding:1em;
 	padding-left:2em;
 	padding-right:2em;
@@ -494,10 +519,13 @@ ul.orders {
     grid-row-start: 1;
 	grid-row-end: 4;
 	z-index: 999;
-    position: relative; /* Laat de afbeelding twee rijen innemen */
     width: auto;
-	height:70vh;
-	margin-top: -1em;
+	height:80vh;
+	transform: translateX(-10em);
+	right: 10em;
+	margin-bottom: 10em;
+	transition: none; /* Zorg ervoor dat de knop zelf niet schaalt */
+	overflow: hidden;
 }
 
 .risography h2{
@@ -513,5 +541,26 @@ ul.orders {
 	justify-content: center;
 	list-style: none;
 }
+
+/*bron: hoe laat ik alleen de tekst in de button groter worden? https://chatgpt.com/share/6751fd87-6250-8009-bd60-bb8c346a1046*/
+.risography button:hover .risobutton {
+	transform: scale(1.2); /* Vergroot alleen de tekst */
+	transition: transform 0.3s ease; /* Vloeiende overgang voor de tekst */
+  }
+
+  .risography button#process {
+	position:absolute;
+  }
+
+  @keyframes slideDown {
+	from {
+	  opacity: 0;
+	  transform: translateY(-20px); /* Start bovenaan */
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0); /* Eindig op de oorspronkelijke plaats */
+	}
+  }
 
 
