@@ -265,7 +265,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 3 (week 4)
 
-<details>
+<details open>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -291,14 +291,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Grid proberen te maken in kopje RISOPRINT 
   <img src="readme-images/week4-probeersels/grid-probeersel-risprint-home.png">
+  wanneer je display: block; uitzet, werkt de hele code niet meer, ookal staat er in de inspector op de browser dat dit de reden is dat de code niet werkt.
+
+  Grid maken in risography:
+  Poging 1: bron gebruikt: https://chatgpt.com/share/67518189-0fbc-8009-b53e-b7cb75eb1c12
+  <img src="readme-images/week4-probeersels/rispgraphy-1-how-to-move-img.png">
+  <img src="readme-images/week4-probeersels/rispgraphy-2-how-to-move-img.png">
+  mislukt!  
+  <img src="readme-images/week4-probeersels/risography-3-grid.png">
+  <img src="readme-images/week4-probeersels/risgraphy-4-grid.png">
+  <img src="readme-images/week4-probeersels/risography-5-grid.png">
+  Bijna goed. Hoe selecteer je de tekst in een button?
 
   ### Agenda voor meeting
   • Hoe kan ik de tekst van buttons specifiek targetten?
-  • zorgen dat de afbeelding naast de tekst komt te staan?
-  • Regualr is geen geldige code??
-  • snap nog steeds niks van hamburger menu, en de animatie werkt niet, zoals in mijn bron.. help?
-  • Foutmelding, mag geen span gebruiken	om text kleur oranje te maken, wat moet veranderd?
-  • Hele lange naam fonts, ik houd gewoon de fonts die ik al had. Niet precies hetzelfde, maar goed genoeg denk ik.
+  • Hoe zorgen dat de afbeelding naast de tekst komt te staan? (dit is denk ik al opgelost met grid)
+  • Regualr is geen geldige css waarde??
+  • Snap nog steeds niks van hamburger menu, en de animatie werkt niet, zoals in mijn bron.. help?
+  • Foutmelding, mag geen span gebruikenom text kleur oranje te maken, wat moet veranderd?
+  • Hele lange naam voor de fonts die ik heb gedownload van de site. Geen idee daarom welke font wat doet. Ik houd gewoon de fonts die ik al had gevonden met typefinder.
 
 
   ### Verslag van meeting

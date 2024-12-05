@@ -324,7 +324,7 @@ ul.orders {
 	height: 5em;
 	z-index: 2;
 	position: absolute;
-	right: 17.35vw;
+	right: 17.5vw;
 	bottom: 19vh;
 }
 
@@ -424,9 +424,10 @@ ul.orders {
 .risography {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
+	position: relative;
 	background-image: url(../images/backgrounds/risioprint-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -445,18 +446,23 @@ ul.orders {
 	font-size: 1em;
 	list-style-type: none;
 	line-height: 1.5em;
+	margin: 0; /* Verwijder ruimte rond paragrafen */
+    padding: 0;
 }
 
-#process {
-	grid-area: 2 / 2 / 3 / 3;
-	width: 30VW;
-	margin-top: 10vh;
+#process,
+#history,
+#faqs,
+#dopple  {
+	grid-area: 3 / 2 / 4 / 3;
+	width: 25VW;
+	margin-top: 3vh;
 }
 
 .tabs { 
 	grid-area: 1 / 2 / 2 / 3;
 	list-style-type: none;
-	margin: 0;
+	margin-top: 5em;
 	padding: 0;
 	border:1px;
 	border-radius:5em;
@@ -483,11 +489,25 @@ ul.orders {
 }
 
 .risography img {
-	order: 1;
-	grid-area: 1 / 2 / 2 / 3;
-	width: 40vw;
+	grid-column-start: 3; 
+	grid-column-end: 4;/* Zet de afbeelding in de tweede kolom */
+    grid-row-start: 1;
+	grid-row-end: 4;
+	z-index: 999;
+    position: relative; /* Laat de afbeelding twee rijen innemen */
+    width: auto;
+	height:70vh;
+	margin-top: -1em;
 }
 
+.risography h2{
+	grid-area: 2 / 2 / 3 / 3;
+	font-family: Guntez;
+    font-weight: bold;
+	margin-top: 10vh;
+	color: var(--color-text);
+	font-size: 5em;
+}
 .tabs ul{
 	display: flex;
 	justify-content: center;
