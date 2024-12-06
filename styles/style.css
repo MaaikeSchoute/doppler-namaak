@@ -18,6 +18,7 @@
 :root {
 	--color-text:#111;
 	--animation-text-color: #FEFCF2;
+	--white-color: #FFFF;
 	--color-background: #F3F0ED;
 	--banner-background-color: #fe4f4f;
 	--yellow-color: #FFD500;
@@ -423,10 +424,10 @@ ul.orders {
 
 .risography {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(1, 1fr);
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 0;
+    min-height: 100vh;
 	position: relative;
 	background-image: url(../images/backgrounds/risioprint-bg.jpg);
 	background-repeat: no-repeat;
@@ -464,30 +465,38 @@ ul.orders {
 #faqs,
 #dopple  {
 	grid-area: 3 / 2 / 4 / 3;
-	width: 27VW;
+	width: 100%;
 	margin-top: 3vh;
 	animation-name: slideDown;
 	transition: opacity 0.3s ease, transform 1s ease;
 }
 
+/* process */
 .tabs ul li:first-child{
 	z-index: 1;
 	rotate: -25deg;
 	transform: translateX(-8em);
 }
 
+/* history */
 .tabs ul li:nth-child(2){
 	z-index:2;
-	rotate: 25deg;
-	transform: translateX(20em);
-	transform: translateY(6em);
+	transform: translateY(6em) translateX(-13em) rotate(20deg);
 }
 
+/* faqs */
+/* Bron: wat is -webkit? https://chatgpt.com/share/675309bd-dc30-8009-b04f-53b6994450cd */
 .tabs ul li:nth-child(3){
+	position: absolute;
 	z-index:3;
-	rotate: -15deg;
-	position:absolute;
-	top:-1em;
+	-webkit-transform: translateY(-1em) translateX(1em) rotate(-15deg);
+}
+
+/* dopple */
+.tabs ul li:last-child{
+	position: absolute;
+	z-index:4;
+	transform: translateY(3em) translateX(10em);
 }
 
 .tabs { 
@@ -507,15 +516,16 @@ ul.orders {
 	font-family: Brice;
 	font-weight: bold;
 	font-size: 1.8em;
-	padding:1em;
+	padding:1.1em;
 	padding-left:2em;
 	padding-right:2em;
 	border-radius: 50vh;
+	background-color: var(--white-color);
 }
 
 .risography img {
 	grid-column-start: 3; 
-	grid-column-end: 4;/* Zet de afbeelding in de tweede kolom */
+	grid-column-end: 3;/* Zet de afbeelding in de tweede kolom */
     grid-row-start: 1;
 	grid-row-end: 4;
 	z-index: 999;
@@ -532,7 +542,7 @@ ul.orders {
 	grid-area: 2 / 2 / 3 / 3;
 	font-family: Guntez;
     font-weight: bold;
-	margin-top: 10vh;
+	margin-top: 15vh;
 	color: var(--color-text);
 	font-size: 5em;
 }
@@ -560,6 +570,58 @@ ul.orders {
 	to {
 	  opacity: 1;
 	  transform: translateY(0); /* Eindig op de oorspronkelijke plaats */
+	}
+  }
+
+  @media screen and (max-width: 1024px) {
+	#process, #history, #faqs, #dopple  {
+	padding: 1em;
+	font-size: 1em;
+	}
+
+	.risography button {
+		font-size: 1em;
+	}
+
+	.risography {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: auto;
+		grid-gap: 0;
+		min-height: 100vh;
+		overflow: visible;/* 3 rijen: 1 voor afbeelding, 1 voor knoppen, 1 voor andere inhoud */
+	}
+
+	.tabs {
+		grid-column: 1 / 5; /* Zet de knoppen over de hele breedte */
+        grid-row: 2; /* Z /* Zet de knoppen in de tweede rij */
+		list-style-type: none;
+		margin-top: -2em;
+		padding: 0;
+		border: 1px;
+		border-radius: 5em;
+		position: relative;
+	}
+
+	/* Tab-content */
+	.tab-content {
+		grid-column: 1 / 5; /* Zet de inhoud over alle 4 kolommen */
+		grid-row: 4; /* Zet de inhoud onder de header */
+	}
+
+	.risography img {
+		display: flex; /* Gebruik flexbox om te centreren */
+        justify-content: center; /* Horizontaal centreren */
+        align-items: center; /* Verticaal centreren */
+        height: 50vh; /* Verklein de afbeelding op kleinere schermen */
+        margin: 0 auto; /* Zorg ervoor dat de afbeelding gecentreerd blijft */
+	}
+
+	.risography h2 {
+		display: flex; /* Gebruik flexbox om te centreren */
+        justify-content: center; /* Horizontaal centreren */
+        align-items: center;
+		font-size: 3em;
 	}
   }
 
