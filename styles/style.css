@@ -465,6 +465,10 @@ ul.orders {
 	background-size: cover;
 }
 
+span.risobutton {
+	color: var(--color-text);
+}
+
 /* bron: tabs: How to make tabs: https://www.youtube.com/watch?app=desktop&v=5L6h_MrNvsk&t=3m58s */ 
 /*bron: hoe voeg je slidedown toe aan tabs? https://chatgpt.com/share/6751fd87-6250-8009-bd60-bb8c346a1046*/
 [data-tab-content] {
@@ -562,8 +566,7 @@ ul.orders {
 	padding-right:2em;
 	border-radius: 50vh;
 	background-color: var(--white-color);
-	border-color: var(--color-background);
-	border-width: 1em;
+	border: 1px solid var(--color-text);
 	cursor: pointer;
 }
 
@@ -1145,9 +1148,6 @@ span {
 .featured img {
 	width: 100%;
 }
-
-
-
 
 /* met hover moet je een zwarte, doorschijnende div zien, en daar bovenop tekst.
 tekst staat in de div, gecentreerd, zowel horizon als verticaal. */

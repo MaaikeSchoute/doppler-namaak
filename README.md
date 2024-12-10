@@ -136,7 +136,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Breakdownschets (week 1)
 
-<details>
+<details open>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
@@ -369,7 +369,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   • Ik heb geleerd dat coderen volledige aandacht nodig heeft, en dat de enige manier om het te leren is, door het vaak te doen en te begrijpen wat je doet.
   • Ik heb geleerd om in het box model te denken.
   • Ik heb een beetje meer begrip voor javascript.
-  • consol log() testen nadat je de cont, of andere dingest hebt geschreven, en niet bovenaan je pagina (tenzij test om te zien of je js is gelinked met dom).
+  • consol log() testen nadat je de const, of andere dingest hebt geschreven, en niet bovenaan je pagina (tenzij test om te zien of je js is gelinked met dom).
   • Ik heb geleerd waar je op moet letten om een site toegankelijk te maken voor zoveel mogelijk verschillende doelgroepen, en beperkingen. Ook geleerd waar je een lijst kan vinden waar al deze informatie duidelijk staat vermeld.
 
   <b>Wat ging goed</b>
