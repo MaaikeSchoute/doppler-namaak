@@ -265,3 +265,900 @@ nav li {
 	text-decoration: underline;
 	text-underline-offset: 0.5em;
 	text-decoration-thickness: 1px;
+	text-decoration-skip-ink: auto;
+	color: white;
+	line-height: 1.8em;;
+}*/
+
+/****************/
+/* Dopple Shop, Prints & Design */
+/****************/
+
+ul.orders {
+	display: grid;
+	display: -ms-grid;
+	grid-template-columns: repeat(auto-fit, minmax(33vw, 1fr));
+	list-style: none;
+}
+ 
+.orders li {
+	min-height: 50vh;
+}
+
+.orders li:first-child {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-image: url(../images/backgrounds/bg-doubledesign.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+/*Bron: https://chatgpt.com/share/674ddfc5-43e8-8009-b34f-1faf6b260f08: Maar hoe zorg ik ervoor dat de afbeelding in het midden van de parent staat?*/
+.orders li:first-child img {
+	position: absolute; 
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%, -50%); 
+	width: 70%;
+	z-index: 1;
+}
+
+/*Bron: https://chatgpt.com/share/674ddfc5-43e8-8009-b34f-1faf6b260f08: hoe kan ik aangeven, dat wanneer een tekst buiten een bepaalde breedte gaat, hij zichzelf onder elkaar zet? css*/
+.orders li:first-child h2 {
+	font-size: 5em;
+	overflow-wrap: break-word;
+	line-height: 1em;
+	z-index: 2;
+	white-space: normal;
+	position: absolute;
+	text-align: center;
+}
+
+.orders li:nth-of-type(2) {
+	background-image: url(../images/backgrounds/paint-smudge-center-full.png);
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.orders li:nth-of-type(2) h2 {
+	color: #EB5E29;
+	font-family: Guntez;
+    font-weight: bold;
+	padding: 1em;
+	font-size: 5em;
+	overflow-wrap: break-word;
+	line-height: 1em;
+	white-space: normal;
+	position: absolute;
+	text-align: center;
+	z-index: 1;
+}
+
+.orders li:nth-of-type(2) img {
+	width: auto;
+	height: 5em;
+	z-index: 2;
+	position: absolute;
+	right: 17.5vw;
+	bottom: 19vh;
+}
+
+.orders li:nth-of-type(3) {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../images/header/bg-header.jpg);
+	position: relative;
+	background-size: cover;
+	background-repeat: repeat;
+	background-position: center; 
+	width:100%;
+	z-index: 1;
+}
+
+/*verbergt H2*/
+.orders li:nth-of-type(3) h2 {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+.orders li:nth-of-type(3) img:nth-child(2) {
+	position:absolute;
+	height: 20vh;
+	width: auto;
+	z-index: 2;
+}
+
+.orders li:nth-of-type(3) img:last-child {
+	position:absolute;
+	height: 19vh;
+	right: 12vw;
+	top: 4em;
+	z-index: 1;
+}
+
+@media (max-width: 1024px) {
+	ul.orders {
+	  grid-template-columns: 1fr; /* Zorg ervoor dat de lijstitems onder elkaar staan */
+	}
+  
+	.orders li {
+	  min-height: 50vh; /* Zorg ervoor dat de hoogte automatisch is */
+	}
+
+	.orders li:first-child h2 {
+		font-size: 3em;
+	}
+
+	.orders li:nth-of-type(1) {
+		order: 2;
+	}
+
+	.orders li:nth-of-type(2) {
+		order: 1;
+	}
+
+	.orders li:nth-of-type(3) {
+		order: 3;
+	}
+
+	.orders li:nth-of-type(2) h2 {
+		font-size: 3em;
+	}
+
+	.orders li:nth-of-type(2) img {
+		width: auto;
+		height: 3em;
+		right: 52.3vw;
+		bottom: 20vh;
+	}
+
+	.orders li:nth-of-type(3) img:nth-child(2) {
+		height: 15vh;
+		width: auto;
+	}
+
+	.orders li:nth-of-type(3) img:last-child {
+		top: 10vh;
+		right: 35vw;
+		height: 15vh;
+	}
+
+  }
+
+
+/****************/
+/* Risography */
+/****************/
+
+.risography {
+	display: grid;
+	display: -ms-grid;
+    grid-template-columns: repeat(4, 1f,r minmax(12em, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0;
+    min-height: 100vh;
+	position: relative;
+	background-image: url(../images/backgrounds/risioprint-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* bron: tabs: How to make tabs: https://www.youtube.com/watch?app=desktop&v=5L6h_MrNvsk&t=3m58s */ 
+/*bron: hoe voeg je slidedown toe aan tabs? https://chatgpt.com/share/6751fd87-6250-8009-bd60-bb8c346a1046*/
+[data-tab-content] {
+	opacity: 0; 
+	transform: translateY(-20px);
+	position: absolute;
+	visibility: hidden;
+	transition: opacity 0.3s ease, transform 0.5s ease;
+	height: 100%;
+	width: 100%;
+}
+
+.active[data-tab-content] {
+	opacity: 1; /* Maak de inhoud zichtbaar */
+	transform: translateY(0); /* Laat de inhoud van boven naar beneden bewegen */
+	visibility: visible;
+  }
+
+.tab-content p {
+	font-size: 1em;
+	list-style-type: none;
+	line-height: 1.5em;
+	margin: 0; /* Verwijder ruimte rond paragrafen */
+    padding: 0;
+}
+
+#process,
+#history,
+#faqs,
+#dopple  {
+	grid-area: 3 / 2 / 4 / 3;
+	margin-top: 3vh;
+	animation-name: slideDown;
+	transition: opacity 0.3s ease, transform 1s ease;
+}
+
+#process h3, #history h3,#faqs h3,#dopple h3 {
+	clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   height: 1px;
+   overflow: hidden;
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+}
+
+/* process */
+.tabs ul li:first-child{
+	z-index: 1;
+	rotate: -25deg;
+	transform: translateX(-8em);
+}
+
+/* history */
+.tabs ul li:nth-child(2){
+	z-index:2;
+	transform: translateY(6em) translateX(-13em) rotate(20deg);
+}
+
+/* faqs */
+/* Bron: wat is -webkit? https://chatgpt.com/share/675309bd-dc30-8009-b04f-53b6994450cd */
+.tabs ul li:nth-child(3){
+	position: absolute;
+	z-index:3;
+	-webkit-transform: translateY(-1em) translateX(1em) rotate(-15deg);
+}
+
+/* dopple */
+.tabs ul li:last-child{
+	position: absolute;
+	z-index:4;
+	transform: translateY(3em) translateX(10em);
+}
+
+.tabs { 
+	grid-area: 1 / 2 / 2 / 3;
+	list-style-type: none;
+	margin-top: 11em;
+	padding: 0;
+	border:1px;
+	border-radius:5em;
+	position: relative;
+}
+
+.risography button {
+	all: unset; 
+	display: inline-flex; /* Zorgt ervoor dat de knop zich aanpast aan de tekst */
+ 	align-items: center; /* Centreer de tekst verticaal */
+ 	justify-content: center;
+	font-family: Brice;
+	font-weight: bold;
+	font-size: 1.8em;
+	padding:1.1em;
+	padding-left:2em;
+	padding-right:2em;
+	border-radius: 50vh;
+	background-color: var(--white-color);
+	border-color: var(--color-background);
+	border-width: 1em;
+	cursor: pointer;
+}
+
+.risography img {
+	grid-column-start: 3; 
+	grid-column-end: 3;/* Zet de afbeelding in de tweede kolom */
+    grid-row-start: 1;
+	grid-row-end: 4;
+	z-index: 999;
+    width: auto;
+	height:80vh;
+	transform: translateX(-10em);
+	right: 10em;
+	margin-bottom: 10em;
+	transition: none; /* Zorg ervoor dat de knop zelf niet schaalt */
+	overflow: hidden;
+}
+
+.risography h2{
+	grid-area: 2 / 2 / 3 / 3;
+	font-family: Guntez;
+    font-weight: bold;
+	margin-top: 15vh;
+	color: var(--color-text);
+	font-size: 5em;
+}
+
+.risography p{
+	margin-bottom: 1em;
+}
+.tabs ul{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	list-style: none;
+}
+
+/*bron: hoe laat ik alleen de tekst in de button groter worden? https://chatgpt.com/share/6751fd87-6250-8009-bd60-bb8c346a1046*/
+.risography button:hover .risobutton {
+	transform: scale(1.2); /* Vergroot alleen de tekst */
+	transition: transform 0.3s ease; /* Vloeiende overgang voor de tekst */
+  }
+
+  .risography button#process {
+	position:absolute;
+  }
+
+  @keyframes slideDown {
+	from {
+	  opacity: 0;
+	  transform: translateY(-20px); /* Start bovenaan */
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0); /* Eindig op de oorspronkelijke plaats */
+	}
+  }
+
+  @media screen and (max-width: 1024px) {
+	#process, #history, #faqs, #dopple  {
+	padding: 1em;
+	font-size: 1.2em;
+	}
+
+	.risography button {
+		font-size: 1.2em;
+		padding:1.1em;
+	}
+
+	.risography {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: auto;
+		grid-gap: 0;
+		min-height: 80em;
+		overflow: scroll;
+		background-image: url(../images/backgrounds/verticle-bg-risography.jpg);/* 3 rijen: 1 voor afbeelding, 1 voor knoppen, 1 voor andere inhoud */
+	}
+
+	.tabs {
+		grid-column: 1 / 5; /* Zet de knoppen over de hele breedte */
+        grid-row: 2; /* Z /* Zet de knoppen in de tweede rij */
+		list-style-type: none;
+		margin-top: -2em;
+		padding: 0;
+		border: 1px;
+		border-radius: 5em;
+		position: relative;
+	}
+
+		/* process */
+.tabs ul li:first-child{
+	z-index:2;
+	transform: translateX(0.05em) translateY(3em)rotate(-5deg);
+}
+
+/* history */
+.tabs ul li:nth-child(2){
+	z-index:2;
+	transform: translateY(-1em) translateX(-13em) rotate(12deg);
+}
+
+/* faqs */
+/* Bron: wat is -webkit? https://chatgpt.com/share/675309bd-dc30-8009-b04f-53b6994450cd */
+.tabs ul li:nth-child(3){
+	position: absolute;
+	z-index:1;
+	-webkit-transform: translateY(-2em) translateX(1em) rotate(-15deg);
+	padding-bottom: 3em;
+}
+
+/* dopple */
+.tabs ul li:last-child{
+	position: absolute;
+	z-index:4;
+	transform: translateY(1em) translateX(6em);
+}
+
+	/* Tab-content */
+	.tab-content {
+		grid-column: 1 / 5; /* Zet de inhoud over alle 4 kolommen */
+		grid-row: 4; /* Zet de inhoud onder de header */
+	}
+
+	.risography img {
+		display: flex;/* Gebruik flexbox om te centreren */
+		display: -webkit-flex; 
+        justify-content: center; /* Horizontaal centreren */
+        align-items: center; /* Verticaal centreren */
+        height: 50vh; /* Verklein de afbeelding op kleinere schermen */
+        margin: 0em auto;
+		margin-bottom: -5em;
+		margin-left: -3em; /* Zorg ervoor dat de afbeelding gecentreerd blijft */
+		grid-row: 1;
+	}
+
+	.risography h2 {
+		display: flex; /* Gebruik flexbox om te centreren */
+		display: -webkit-flex; 
+        justify-content: center; /* Horizontaal centreren */
+        align-items: center;
+		font-size: 2.5em;
+		grid-row: 2;
+	}
+
+	.risography ul {
+		grid-row: 3;
+	}
+
+	#process,#history,#faqs,#dopple  {
+	grid-area: 3 / 2 / 4 / 3;
+	margin-top: -1em;
+	margin-bottom: 100%;
+	animation-name: slideDown;
+	transition: opacity 0.3s ease, transform 1s ease;
+	font-size: 0.8em;
+	padding: 3em;
+	}
+
+.tabs ul{
+	margin-top: -15em;
+}
+
+  }
+
+/****************/
+/* 	SOY INK 	*/
+/****************/
+
+/* bron: Hulp bij het maken van de layoutpagina: https://chatgpt.com/share/67544ceb-6d58-8009-8c93-8c78735101fd */
+.soyinkts-container {
+	padding-top: 4em;
+	background-image: url(../images/backgrounds/bg-ster-soyinkts.jpg);
+	background-position: center; /* Centreer de afbeelding */
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.soyinkts {
+	max-width: 60vw; 
+	margin: 0 auto; 
+	padding: 0 20px; 
+	box-sizing: border-box;
+	display: grid;
+	display: -ms-grid;
+	grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1em;
+}
+
+.soyinkts h2{
+	color: var(--color-text);
+	grid-column-start: 1;
+	grid-row-start: 1;
+	white-space: normal;
+	word-break: break-word;
+	font-size: 4em;
+	font-family: Guntez;
+    font-weight: bold;
+	line-height: 1em;
+	opacity: 89%;
+}
+
+.soyinkts p {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	line-height: 1.5em;
+	font-size: 0.8em;
+}
+
+.button-container {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	display: grid; /* Gebruik flexbox voor flexibele lay-out */
+	grid-template-columns: repeat(auto-fit, minmax(10em, 1fr)) ; /* Laat items naar de volgende regel springen */
+
+}
+
+.button-container button {
+    width: auto; /* Zorg dat breedte flexibel blijft */
+    height: auto; 
+	text-align: center;/* Zorg dat hoogte flexibel blijft */
+}
+
+.soyinkts button img {
+	width: 14em;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+/* Bron: vormgeving van button weghalen: https://chatgpt.com/share/67544ceb-6d58-8009-8c93-8c78735101fd */
+.soyinkts button {
+	all: unset; 
+	cursor: pointer;
+	display: inline-block;
+	padding: 0;
+	border: none;
+	background: none; 
+	margin: 0;
+}
+
+.soyinkts ul{
+	list-style: none;
+}
+
+/* bron: scrollbar snap, en fit: https://www.youtube.com/watch?v=McPdzhLRzCg */
+.swatches-container img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+	height: 32em;
+	width: auto;
+	object-fit: contain;
+	margin-left: 5em /* Schaal zonder vervorming */	
+}
+
+/* bron: carosel code: https://codepen.io/shooft/pen/QWKqzQj?editors=0110 */
+.swatches-container {
+	height: 32em;
+	display: flex;
+	display: -webkit-flex; 
+	flex-direction: column;
+	overflow-y: auto;
+	scroll-snap-type: y mandatory ;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch; /* voor iOS (zie bron)*/
+  	-ms-overflow-style: none; /* voor IE (zie bron)*/
+	scrollbar-width: none; /* voor firefox (zie bron)*/
+	width: auto;
+	grid-row-start: 2;
+	grid-column-start: 4;
+	transition: transform 0.5s ease;
+}
+
+/* bron: carosel code: https://codepen.io/shooft/pen/QWKqzQj?editors=0110 */
+/* scrollbar zoveel mogelijk verbergen */
+.swatches-container > ul::-webkit-scrollbar {
+	display: none; /* voor chrome, safari en edge zie bron */
+  }
+
+.swatches-container li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* 	BLOKJES KLEUR 	*/
+.blokjes {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	display: flex;
+	display: -webkit-flex; 
+	justify-content: center;
+}
+
+#black-1 {
+	width: 6em;
+	height: 6em;
+	color: rgb(0, 0, 0);
+}
+
+
+@media screen and (max-width: 1024px) {
+	.soyinkts {
+		max-width: 90vw;
+        display: flex; /* Gebruik flexbox */
+        flex-direction: column;
+        gap: 1em; /* Houd ruimte tussen elementen */
+    }
+
+	.soyinkts h2,
+    .soyinkts p,
+    .button-container,
+    .swatches-container,
+    .blokjes {
+        grid-column: 1 / -1; /* Zorg dat elk element over de hele breedte gaat */
+        width: 100%; /* Laat elementen volledig breed zijn */
+        text-align: center; /* Optioneel: centreren van inhoud */
+    }
+
+	.soyinkts h2 {
+		font-size: 2.5em;
+	}
+
+	.soyinkts p {
+		text-align: left;
+	}
+
+	.soyinkts button img {
+		width: 10em;
+	}
+
+	.swatches-container img {
+        width: 10em; /* Pas de grootte van de swatches aan */
+        height: auto;
+		margin: 0;
+    }
+
+	.blokjes {
+        flex-wrap: wrap; /* Blokjes wrappen naar de volgende regel */
+        gap: 1em; /* Ruimte tussen blokjes */
+    }
+
+    .blokjes div {
+        width: 4em; /* Pas de grootte van de blokjes aan */
+        height: 4em;
+    }
+
+}
+
+
+/****************/
+/* 	PAPERS 	*/
+/****************/
+
+.prepping-paper {
+	background-image: url('../images/backgrounds/groene achtergrond.jpg');
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+	position: relative;
+	padding-top: 4em;
+	padding-bottom: 6em;
+	gap: 1em;
+}
+
+.paper, .artwork, .toptips {
+	background-image: url(../images/header/bg-header.jpg);
+	display: column;
+	padding: 2em;
+	margin: 1em;
+	grid-row-start: 2;
+	max-width: 18vw;
+	min-width: 17em;
+	position: relative;
+}
+
+.paper {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.artwork {
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+.toptips {
+	grid-column-start: 4;
+	grid-column-end: 5;
+}
+
+.paper ul {   /* Verwijder ongewenste margin */           /* Verwijder padding indien aanwezig */
+	margin-top: 6.5em;
+    list-style: none; /* Centers items horizontally */
+}
+
+.prepping-paper h2 {
+	text-align: center;
+	grid-column-start: 1;
+	grid-column-end: 6;
+	grid-row-start: 1;
+	font-size: 2.5em;
+	margin-bottom: 0.5em;
+}
+
+.prepping-paper p {
+	font-size: 0.7em;
+	margin-bottom: 1.2em;
+	line-height: 1.3em;
+}
+
+hr {
+	width: 90%;
+	margin: 0 auto;
+	border: 0.1em solid var(--banner-background-color);
+	margin-bottom: 1em;
+}
+
+span {
+	color: var(--banner-background-color);
+	font-size: 500;
+}
+
+.paper ul {
+	margin-top: 6.5em;
+	list-style: none;
+	display: flex;
+	display: -webkit-flex; 
+	position: relative;
+}
+
+/* Bron: hoe kan ik een element iets omhoog laten gaan als je er met de muis over hovert?: https://chatgpt.com/share/6755e6de-240c-8009-bac0-bd972cc7261f */
+.paper ul li {
+	position: absolute;
+	transition: transform 0.3s ease;
+	z-index: 20;
+}
+
+.paper ul li:nth-child(2) {
+	transform: translateX(1.5em);
+	z-index: 8;
+}
+
+.paper ul li:nth-child(3) {
+	transform: translateX(3em);
+	z-index: 7;
+}
+
+.paper ul li:nth-child(4) {
+	transform: translateX(4.5em);
+	z-index: 6;
+}
+
+.paper ul li:nth-child(5) {
+	transform: translateX(6em);
+	z-index: 5;
+}
+
+.paper ul li:nth-child(6) {
+	transform: translateX(7.5em);
+	z-index: 4;
+}
+
+
+/* hovers */
+.paper ul li:hover {
+	transform: translateY(-35px);
+}
+
+.paper ul li:nth-child(2):hover {
+	transform: translateX(1.5em) translateY(-40px);
+	z-index: 8;
+}
+
+.paper ul li:nth-child(3):hover {
+	transform: translateX(3em) translateY(-40px);
+	z-index: 7;
+}
+
+.paper ul li:nth-child(4):hover {
+	transform: translateX(4.5em) translateY(-40px);
+	z-index: 6;
+}
+
+.paper ul li:nth-child(5):hover {
+	transform: translateX(6em) translateY(-40px);
+	z-index: 5;
+}
+
+.paper ul li:nth-child(6):hover {
+	transform: translateX(7.5em) translateY(-40px);
+	z-index: 4;
+}
+
+.toptips img{
+	width: 6em;
+	position: absolute;
+	float: right;
+	transform: translateX(12em) translateY(-5em);
+	margin: 10px;
+	transition: transform 0.3s ease;
+}
+
+.toptips img:hover{
+	position: absolute;
+	transform: translateX(12em) translateY(-5em) skewY(5deg) rotate(5deg);
+}
+
+@media screen and (max-width: 1024px) {
+	.prepping-paper {
+		display: flex; /* Gebruik flexbox */
+        flex-direction: column; /* Plaats de kinderen verticaal onder elkaar */
+        align-items: center; /* Centreer de items horizontaal */
+        justify-content: center; /* Centreer de items verticaal */; /* Zorg ervoor dat de container de volledige hoogte van de viewport vult */
+        padding: 1em; /* Voeg wat binnenruimte toe voor een netter uiterlijk */
+        gap: 1em; 
+		background-image: url(../images/backgrounds/bg-body.jpg);
+	}
+
+	.prepping-paper h2{
+		white-space: normal;
+		word-break: break-word;
+		font-size: 2.5em;
+		line-height: 1em;
+		margin-top: 2em;
+		margin-bottom: 1em;
+	}
+
+	    .paper, .artwork, .toptips {
+        margin: 0; /* Voeg wat ruimte tussen de secties toe */
+        padding: 1em;
+		padding-bottom: 3em; /* Binnenruimte voor leesbaarheid */
+        max-width: 22em; /* Verwijder maximale breedte restricties */
+        min-width: 21em;
+		height: 100%; /* Reset minimum breedte */
+    }
+
+	.toptips img {
+        position: static; /* Zorg dat de afbeelding zich aanpast */
+        margin: 1em auto;
+        transform: none; /* Verwijder animaties op mobiele apparaten */
+        display: block; /* Centreer de afbeelding */
+    }
+
+	.paper ul {
+		margin-top: 2em;
+		list-style: none;
+		display: flex;
+		display: -webkit-flex; 
+		position: relative;
+	}
+
+	.paper {
+		height: 37em;
+	}
+
+	.paper ul{
+		margin-left:2em;
+		margin-top: 3em;
+	}
+}
+
+/****************/
+/* 	FEATURED 	*/
+/****************/
+
+.featured {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(20%, 1fr));;
+}
+
+.featured {
+	list-style: none;
+}
+.featured img {
+	width: 100%;
+}
+
+
+
+
+/* met hover moet je een zwarte, doorschijnende div zien, en daar bovenop tekst.
+tekst staat in de div, gecentreerd, zowel horizon als verticaal. */
+
+@media screen and (max-width: 1024px) {
+
+}
+
+/****************/
+/* 	FOOTER 	*/
+/****************/
+
+
+/* pop up footer */
+/* bron pop up maken: https://www.youtube.com/watch?v=AF6vGYIyV8M */
+footer {
+	background-color: var(--color-text);
+}
