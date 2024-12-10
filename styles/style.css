@@ -112,7 +112,12 @@ header {
 	padding: 2em;
 	background-image: url(../images/header/bg-header.jpg);
 	background-repeat: repeat;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
 }
+
+
 
 h1 {
 	clip: rect(0 0 0 0);
@@ -911,7 +916,6 @@ ul.orders {
         width: 4em; /* Pas de grootte van de blokjes aan */
         height: 4em;
     }
-
 }
 
 
@@ -1161,4 +1165,48 @@ tekst staat in de div, gecentreerd, zowel horizon als verticaal. */
 /* bron pop up maken: https://www.youtube.com/watch?v=AF6vGYIyV8M */
 footer {
 	background-color: var(--color-text);
+}
+
+/****************************************************************/
+/****************************************************************/
+/* 								SHOP 							*/
+/****************************************************************/
+/****************************************************************/
+
+header img {
+	width: 3em;
+	grid-column-start:4;
+	grid-column-start:5;
+	margin-left: 50vw;
+}
+
+.shop {
+	background-color: var(--animation-text-color);
+	background-image: none;
+}
+
+#circle {
+	width: 20em;
+	height: 2.5em;
+	border-radius: 120%;
+	border: 1px solid black;
+	position: absolute;
+}
+
+header p {
+	font-family: brice;
+	font-weight: normal;
+	text-align: center;
+	align-items: center;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+
+}
+
+.back-to-shop-container #circle {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	top: -0.2em;
 }

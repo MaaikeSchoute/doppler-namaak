@@ -107,12 +107,32 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Er is helemaal geen media.
   
   <strong>Controls:</strong> 
+  - De site gebruikt a elementen voor links, en buttons voor acties die op de site gebeuren.
+  - Links zijn goed herkenbaar als links, want zodra je er met je muis over hovert, komt er een kleine animatie, en veranderd de cursor in een handje.
+  - De controls hebben geen :foces state. 
+  - Bovenaan de pagina is een skip link die inderdaad ervoor zorgt dat je meteen naar de main onderdeel gaat.
+  - Het is wel een verassing wat er gaat gebeuren als je op een link of button klikt, en naar welke pagina je gaat. Ik denk niet dat dit per se fout is.
+
+  <strong>Appearance:</strong> Hoe ziet de website er in elke situatie uit?
+  - De site heeft geen dark/light mode.
+  - Ja, de site heeft een goede vormgeving, daarom is er een groot verschil tussen de voor en achtergrond.
+  - Je kan op de pagina inzoomen, en daarmee inzoomen op de tekst. Het wordt dan wel veel scrollen van links naar rechts, en boven naar beneden.
+  - Er zijn meer manieren dan alleen kleur waarom informatie wordt weergeven. De homepagina is dynamisch, en tegelijkertijd overzichtelijk opgedeelt. Het is duidelijk waar je je bevind, wat en welke informatie elke sectie geeft, en waar je op kunt klikken. Bovendien ziet het erg vrolijk, vriendlijk en inspirerend uit.
   
-  
+  <strong>Animation:</strong> Alle inhoud van de site die beweegt of kan bewegen.
+  - de animaties zijn rustig en langzaam, en niet overheersend. Ze zullen mensen niet snel laten overprikkelen.
+  - Er zijn geen video's op deze site. Alleen langzame gifjes die je niet op pauze kunt zetten.
+  - De site heet niet deze optie. 
+
+  <strong>KEYPOINTS/SAMENVATTING</strong> 
+  - De site is niet semantisch.
+  - Linkjes hebben geen duidelijke namen (waar ga je naartoe? Geen goede feedforward)
+  - Responsive - Mobiel horizontaal krijgt enorme afbeeldingen.
+  - Sommige decoratie afbeeldingen hebben een belangrijke alt. Terwijl belangrijkere onderdelen worden overgeslagen. 
+  - Sommige heading levels zijn verstopt in afbeeldingen, waardoor je die skipt met de reader.
+  - List elementen zijn onduidelijk.  
 
 </details open>
-
-
 
 ## Breakdownschets (week 1)
 
@@ -140,7 +160,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Teveel sections. Maa meer lists. HTML code ziet er wel netjes uit, maar kijk of je wat sections weg halen. HTML zo clean mogelijk.
+  Teveel sections. Maar meer lists. HTML code ziet er wel netjes uit, maar kijk of je wat sections weg halen. HTML zo clean mogelijk.
 
 
   ### Agenda voor meeting
@@ -152,8 +172,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   |Mag je elke 'grote selection' een #ID geven, zodat het bij de CSS makkelijker is om die te vinden ipv nth-of-type(blabla). Kun je dan in die sectie nth-of-type(blabla) gebruiken om 1,2,3 neer te zetten, ipv nth-of-type(20) heb je dan nth-of-type(2).
   | moet de site ook duurzaam zijn? Kleine afbeeldingen
   | wanneer gebruik je span en wanneer gebruikt je div?
-  | mag je <br> gebruiken om een tekst af te breken?
-  | hoeveel tekst mag je in je alttext zetten?
+  | mag je < br > gebruiken om een tekst af te breken?
+  | hoeveel tekst mag je in je alt text zetten?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -192,7 +212,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Wat goed ging is dat ik nu een heading heb. Voor de rest gaat het proces moeizaam...Vooral veel moeite met Javascript.
 
 
   ### Agenda voor meeting
@@ -350,9 +370,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   • Ik heb geleerd om in het box model te denken.
   • Ik heb een beetje meer begrip voor javascript.
   • consol log() testen nadat je de cont, of andere dingest hebt geschreven, en niet bovenaan je pagina (tenzij test om te zien of je js is gelinked met dom).
+  • Ik heb geleerd waar je op moet letten om een site toegankelijk te maken voor zoveel mogelijk verschillende doelgroepen, en beperkingen. Ook geleerd waar je een lijst kan vinden waar al deze informatie duidelijk staat vermeld.
 
   <b>Wat ging goed</b>
-  • Het maken van de oefeningen in de les goed.
+  • Het maken van de oefeningen in de les goed (op het maken van het hamburger menu, na).
   • Het stellen van vragen en feedback is goed gegaan.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
@@ -364,7 +385,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
  • Het maken van een hamburger menu. Zoveel verschillende variaties, nergens een korte beschrijving, en geen short cuts.
  • Misschien een te moeilijke website gekozen? Misschien mezelf te hoog ingeschat? Misschien ben ik piste blauw ipv piste rood?
  • Het toepassen van wat we hebben geleerd in de lessen vond ik soms moeilijk.
- • Het opzoeken van informatie buiten de lessen, maar die ik wel nodig had in mijn code, en wilde begrijpen vond ik lastig. 
+ • Het opzoeken van informatie buiten de lessen, maar die ik wel nodig had in mijn code, en wilde begrijpen vond ik lastig. Filmpjes die langer dan uur duren, maar wel goede uitleg geven. De uitleg dan alsnog niet snappen en vergeten...
+ • Lastig dat de lessen altijd midden op de dag werden gegeven. Hierdoor was het moeilijk om in een goede 'flow' te komen en lekker een paar uurtjes te knallen. In de ochtend kun je misschien net een of twee uur aan de website werken. Kom je thuis, is het rond 17:00 uur. Eten om 18:00 uur, trainen om 20:00 of 17:00 uur. En als je dan weer thuis bent... dan wil je slapen. Weekend vol in december/november. Lastig om zo aan school te werken en meters/uren te maken.
+ • Het ene moment gevoel dat ik het helemaal snap en alles logisch vind. Het volgende moment geen idee waarom dezelfde formulie niet werkt op een ander onderdeel. lol.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
