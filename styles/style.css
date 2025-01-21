@@ -23,6 +23,8 @@
 	--yellow-color: #FFD500;
 	--blue-color: #52B1E4;
 	--pink-color: #EC79AD;
+	--pink-button-color: #EE7FB6;
+	--pink-button-hover-color: #F0A0C7;
 	--green-color: #C0D969;
 
 	--bar-width: 30px;
@@ -963,7 +965,7 @@ span.risobutton {
 	grid-column-end: 5;
 }
 
-.paper ul {   /* Verwijder ongewenste margin */           /* Verwijder padding indien aanwezig */
+.paper ul {   /* Verwijder ongewenste margin */
 	margin-top: 6.5em;
     list-style: none; /* Centers items horizontally */
 }
@@ -1314,7 +1316,7 @@ ul.carousel_nav {
     padding: 0;
     margin: 2em 0.1em 0 2em;
     position: absolute;
-    width: 30%;
+    width: 100%;
 }
 
 ul.carousel_nav li{
@@ -1361,7 +1363,34 @@ ul.carousel_nav li{
 	grid-column-end: 4;
 }
 
-#shop button{ 
+#shop .cart{ 
 	grid-column-start: 3;
 	grid-column-end: 4;
+}
+
+#shop .heart{ 
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+.heart {
+	border-radius: 100%;
+	height: 2.5em;
+	width: 2.5em;
+}
+
+.heart img {
+	height: 2.5em;
+	width: 2.5em;
+}
+
+.cart {
+	border-radius: 50px;
+	border-color: none;
+	height: 2.5em;
+	width: 15em;
+	background-color: var(--pink-button-color);
+	font-size: 1.3em;
+	color: white;
+	font-family: Guntez;
 }
