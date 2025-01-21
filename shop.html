@@ -9,7 +9,7 @@
         <script src="scripts/script.js" defer></script>
         <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     </head>
-    <body>
+    <body id="shop">
         <header class="shop">
             <h1>PippaToole A5 Printset</h1>
                 <p>Back to the shop</p>
@@ -17,15 +17,49 @@
             <img src="images/shapes/lock.png" alt="shopping cart">
         </header>
         <main class="shop">
-            <ul>
-                <li><img src="images/store/img1.jpg" alt="Overvieuw all 5 prints Pippa Toole"></li>
-                <li><img src="images/store/img2.jpg" alt="an other overvieuw of all 5 prints Pippa Toole"></li>
-                <li><img src="images/store/img3.jpg" alt="an other overvieuw of all 5 prints Pippa Toole"></li>
-                <li><img src="images/store/img4.jpg" alt="img 1: Skull bat. Demon lady with bat wings, panter trousesers, skull bra and grey horns"></li>
-                <li><img src="images/store/img5.jpg" alt="img 2: Female devil queen, with red cape with a painted skull. A devil staff in her hand, kinky clothers, high black boots, demon tail and painted skull face."></li>
-                <li><img src="images/store/img6.jpg" alt="img 3: One way ticket. Female who's smoking and wears a red leather jacket, silver chain belt, pink panter suitcase at her feet, red nail polish and red tied scarf, pink hair, red lipstick, painted skull face, high black heels."></li>
-                <li><img src="images/store/img7.jpg" alt="img 4: Eyeball boobs. Female wearing large eyeballs as bra. Short, black skirt. Shredded black panties. Knive with blood in right hand, other hand placed on her side. Sigarette beteen her angry teeth, black hat with a pirate skull. High, black heels till her calves."></li>
-            </ul>
+            <div class="carousel">
+                <button class="carousel_button carousel_button--left" aria-label="back">
+                    <img src="store/arrow.png" alt="">
+                </button>
+                    <div class="carousel_track-container">
+                        <ul class="carousel_track">
+                            <li class="carousel_slide">
+                                <img class="carousel-img current-slide" src="images/store/img1.jpg" alt="">
+                            </li>
+                            <li class="carousel_slide">
+                                <img class="carousel-img" src="images/store/img2.jpg" alt="">
+                            </li>
+                            <li class="carousel_slide">
+                                <img class="carousel-img" src="images/store/img3.jpg" alt="">
+                            </li>
+                            <li class="carousel_slide">
+                                <img class="carousel-img" src="images/store/img4.jpg" alt="">
+                            </li>
+                            <li class="carousel_slide">
+                                <img class="carousel-img" src="images/store/img5.jpg" alt="">
+                            </li>
+                            <li class="carousel_slide">
+                                <img class="carousel-img" src="images/store/img6.jpg" alt="">
+                            </li>
+                            <li class="carousel_slide">
+                                <img class="carousel-img" src="images/store/img7.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="carousel_button carousel_button--right" aria-label="forward">
+                        <img src="store/arrow.png" alt="">
+                    </button>
+        
+                    <ul class="carousel_nav">
+                        <li><button class="carousel_indicator current-slide" aria-label="img1"><img src="images/store/img1.jpg" alt=""> </button></li>
+                        <li><button class="carousel_indicator" aria-label="img2"><img src="images/store/img2.jpg" alt=""> </button></li>
+                        <li><button class="carousel_indicator" aria-label="img3"><img src="images/store/img3.jpg" alt=""> </button></li>
+                        <li><button class="carousel_indicator" aria-label="img4"><img src="images/store/img4.jpg" alt=""> </button></li>
+                        <li><button class="carousel_indicator" aria-label="img5"><img src="images/store/img5.jpg" alt=""></li>
+                        <li><button class="carousel_indicator" aria-label="img6"> <img src="images/store/img6.jpg" alt=""> </button></li>
+                        <li><button class="carousel_indicator" aria-label="img7"><img src="images/store/img7.jpg" alt=""> </button></li>
+                    </ul>
+                </div>
             <!-- Hier komen bolletjes waarbij je kunt zien welke img je ziet. -->
             <h2>PIPPA TOOLE | A5 PRINT SET</h2>
             <h3>£6.00</h3>
@@ -33,11 +67,13 @@
             <!-- nog en keer bolletjes waaruit je een print kunt kiezen -->
             <button>Add to cart</button>
             <button><img src="images/store/paypal.png" alt="."> betalen</button>
-            <p>✷ E X C L U S I V E      L I M I T E D      E D I T I O N</p>
-            <p>-</p>
-            <p>Toole-Ville population 4.</p>
-            <p>-</p>
-            <p><a href="https://www.dopple.shop/post/pippatoole">READ MORE ON THE DOPPLE BLOG ☻</a></p>
+            <div class="limitedEdition">
+                <p>✷ E X C L U S I V E      L I M I T E D      E D I T I O N</p>
+                <p>-</p>
+                <p>Toole-Ville population 4.</p>
+                <p>-</p>
+                <p><a href="https://www.dopple.shop/post/pippatoole">READ MORE ON THE DOPPLE BLOG ☻</a></p>
+            </div>
             <!-- Hieronder komt een in en uitklap menu -->
             <button>PRODUCT INFO</button>
             <P>210 x 148 mm</P> 

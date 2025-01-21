@@ -392,7 +392,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
-
+## Eindgesprek (week 5)
+<details>
+  <summary>Grid maken voor pagina 2: Shop.
+  <img src="readme-images/shopprobeersels/shop1.png" width="375px" alt="uitomst opdracht 1">
+  
+  
+  </summary>
+</details>
 
 
 
@@ -405,7 +412,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
+  1. Bronnen staan bij de code
   2. bron 2
   3. ...
 
