@@ -1180,13 +1180,22 @@ footer {
 	background-image: none;
 }
 
-#shop h2 {
-	color: var(--color-text);
-	font-size: 2em;
-	grid-column-start: 3;
-	grid-column-end: 4;
+#shop main {
+	height: 100vh;
 }
 
+#shop header {
+	height: 12em;
+}
+
+#shop h2 {
+	color: var(--color-text);
+	font-family: Guntez;
+	font-size: 3em;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	word-break: break-all;
+}
 #shop h3 {
 	grid-column-start: 3;
 	grid-column-end: 4;
@@ -1201,7 +1210,7 @@ footer {
 
 .shop {
 	display: grid;
-	grid-template-columns: 5;
+	grid-template-columns: repeat(4, 25%);
 	grid-template-rows: 9;
 	background-color: var(--animation-text-color);
 	background-image: none;	
@@ -1247,10 +1256,8 @@ header p:hover {
 /****************************************************************/
 
 .carousel	{
-	grid-row-start: 1;
-	grid-row-end: 6;
-	grid-column-start: 2;
-	grid-column-end: 3;
+	grid-row: 1/6;
+	grid-column: 2;
     position: relative;
     width: 80%;
     height: 45em;
@@ -1358,30 +1365,28 @@ ul.carousel_nav li{
 	grid-column-end:3;
 }
 
-#shop p{
-	grid-column-start: 3;
-	grid-column-end: 4;
+.shopknop {
+	display: flex;
+	justify-content: center;
 }
 
-#shop .cart{ 
+#shop .shopknop{ 
 	grid-column-start: 3;
-	grid-column-end: 4;
-}
-
-#shop .heart{ 
-	grid-column-start: 3;
-	grid-column-end: 4;
+	display: flex;
+	
 }
 
 .heart {
 	border-radius: 100%;
 	height: 2.5em;
 	width: 2.5em;
+	background-color: var(--pink-button-color);
 }
 
 .heart img {
-	height: 2.5em;
-	width: 2.5em;
+	height: 1.5em;
+	width: 1.5em;
+	margin-top: 2px;
 }
 
 .cart {
@@ -1393,4 +1398,18 @@ ul.carousel_nav li{
 	font-size: 1.3em;
 	color: white;
 	font-family: Guntez;
+}
+
+.paypall img {
+	height: 2em;
+}
+
+.paypall {
+	height: 4em;
+	width: 35em;
+	background-color: var(--pink-button-color);
+}
+
+.paypall:hover {
+	background-color: var(--pink-button-hover-color);
 }

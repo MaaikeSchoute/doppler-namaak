@@ -401,6 +401,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Hierom denk ik dat een class toevoegen hadiger is.
    <img src="readme-images/shopprobeersels/shop4.png" width="375px" alt="shop probeersel grid 1">
    toch maar een divje om de knoppen doen zodat ik ze naast elkaar kan zetten.
+    <img src="readme-images/shopprobeersels/shop5.png" width="375px" alt="shop probeersel grid 1">
 
   </summary>
 </details>
