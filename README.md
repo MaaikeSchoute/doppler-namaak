@@ -394,8 +394,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Eindgesprek (week 5)
 <details>
-  <summary>Grid maken voor pagina 2: Shop.
-  <img src="readme-images/shopprobeersels/shop1.png" width="375px" alt="uitomst opdracht 1">
+  <summary> <p>Grid maken voor pagina 2: Shop.</p>
+  <img src="readme-images/shopprobeersels/shop1.png" width="375px" alt="shop probeersel grid 1">
+  <img src="readme-images/shopprobeersels/shop2.png" width="375px" alt="shop probeersel grid 1">
   
   
   </summary>
