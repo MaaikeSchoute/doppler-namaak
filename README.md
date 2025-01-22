@@ -275,7 +275,75 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   • Moeten de namen van de afbeeldingen ook allemaal naar het engels, als de site in en staat?
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  <strong>Content:</strong> 
+  - Net als vorige keer, is er duidelijk taalgebruik gebruikt. 
+  - Elke knop heeft zijn eigen, duidelijke betekenis.
+
+  <strong>Global code</strong>
+  - <img src="readme-images/validatie-test/validatietest.png"> Een fout, omdat ik een li heb gebruikt terwijl dat niet mocht. Deze test is geslaagd! En verbetered ten opzichte van de orginele site.
+  - In mijn versie en de vorige zijn lang versies voor Engelse taal gebruikt.
+  - Elke pagina heeft een unieke titel, net als in de orginele versie.
+  - Op de mijn Dopple pagina's kun ook inzoomen.
+
+   <strong>Keyboard</strong>
+   - Ook op mijn website kan de gebruiker navigeren met zijn toetsenbord.
+   - Hij pakt alleen de buttons, maar niet de headings? Waarom is dat?
+   - Knoppen zijn met gemak te selcteren, links niet. waarom?
+
+   <strong>Mobile & Touch</strong>
+   - de site is te roteren in met elke rotatie
+   - de site kan je op de mobiel bekijken vanaf elke angle, behalve ligged. Dan kloppen de verhoudingen niet meer, en wordt de achtergrond van een onderdeel heel pixelig.
+   - Er is genoeg ruimte tussen elke knop, zodat deze goed en makkelijk bereikbaar is met de vingers.
+
+   <strong>Headings</strong>
+   - Elke pagina heeft 1 H1.
+   - De pagina is opgedeeld onder meerdere H's.
+   - De headings zijn opgedeeld in een logische volgorde.
+   - Zoals eerder vermeld, zijn deze niet goed te selecteren met de tab, en ik weet niet waarom.
+
+   <strong>Lists</strong>
+  - List elementen zijn gebruikt waarbij list elementen nodig waren.
+
+  <strong>Images</strong>
+  - Alle img elementen hebben een duidelijke Alt tag, behalve als de img alleen als visuele decoratie is gebruikt.
+  - De site heeft geen ingewikkelde afbeeldingen zoals grafieken of kaarten.
+  - Afbeeldingen die een tekst zijn, hebben de alt tag met de tekst. 
+
+  <strong>Media (Video and Audio)</strong>
+  - Er is geen muziek of video die automatisch afspeelt.
+  - Er is helemaal geen media.
+
+  <strong>Contols</strong>
+  - De site gebruikt a elementen voor links, en buttons voor acties die op de site gebeuren.
+  - Links zijn goed te herkennen, maar de animaties zijn (nog) niet bijgeplaatst.
+  - Het is duidelijk welk element is geselecteerd. 
+  - De site heeft geen skip link.
+  - Het is wel een verassing wat er gaat gebeuren als je op een link of button klikt, en naar welke pagina je gaat. Ik denk niet dat dit per se fout is.
+
+  <strong>Appearance</strong>
+  - Er is nog geen dark/light modus
+  - Er is goed verschil tussen de voor en achtergrond.
+  - Je kan op de pagina inzoomen, en daarmee inzoomen op de tekst. Het wordt dan wel veel scrollen van links naar rechts, en boven naar beneden.
+  - Er zijn meer manieren dan alleen kleur waarom informatie wordt weergeven. De homepagina is dynamisch, en tegelijkertijd overzichtelijk opgedeelt. Het is duidelijk waar je je bevind, wat en welke informatie elke sectie geeft, en waar je op kunt klikken. Bovendien ziet het erg vrolijk, vriendlijk en inspirerend uit.
+
+   <strong>Animation</strong>
+   - Subtiele animatie, en met een hover.
+   - Er is geen video
+   - De enige automatische animatie loopt door op beide versies. Hoe kan ik dit stoppen?
+     
+  <strong>Keypoints/Samenvatting van punten die zijn verander/verbetert:</strong>
+  - Mijn HTML is heeft een betere validatie met veel, veel minder foutmeldingen.
+  - Navigatie over doormiddel van het toestenboard, springt de tab, alleen naar de knoppen, en niet naar de headings of de teksten zelf. Waarom is dat?
+  - Knoppen zijn met gemak te selcteren.
+  - De site kan je op de mobiel bekijken vanaf elke angle, behalve ligged. Dan kloppen de verhoudingen niet meer, en wordt de achtergrond van een onderdeel heel pixelig.
+  - list elementen zijn verbeterd.
+  - Heading elementen zijn logisch geplaatst.
+  - Alle img elementen hebben een duidelijke Alt tag, behalve als de img alleen als visuele decoratie is gebruikt.
+  - Afbeeldingen die een tekst zijn, hebben de alt tag met de tekst. 
+  - Links zijn goed te herkennen, maar de animaties zijn (nog) niet bijgeplaatst.
+  - Het is duidelijk welk element is geselecteerd. 
+  - De Site is nu semantisch
+ 
 
 </details>
 
